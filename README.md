@@ -85,4 +85,3 @@ Queremos ajudar jovens a descobrir caminhos, desenvolver competências e conquis
 Porque uma oportunidade começa muito antes da contratação.
 
 Ela começa quando alguém encontra direção.
->>>>>>> 20385f9623b94fb053e3b62ca57bbe45c3533290
