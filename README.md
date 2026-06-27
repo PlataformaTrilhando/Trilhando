@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 #  🚀 Trilhando
 
 > **"Muitos jovens não precisam apenas de uma vaga. Eles precisam saber qual caminho seguir para chegar até ela."**
