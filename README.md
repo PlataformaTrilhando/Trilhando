@@ -1,4 +1,8 @@
-#  🚀 Trilhando
+<div align="center">
+<img src="assets/Images/altBanner.png" alt="Projeto Banner" width="100%">
+</div>
+
+#  🚀 Conheçam a Plataforma Trilhando
 
 > **"Muitos jovens não precisam apenas de uma vaga. Eles precisam saber qual caminho seguir para chegar até ela."**
 
