@@ -1,11 +1,211 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+    <link rel="stylesheet" href="../css/trilhas.css">
     <title>Trilhas</title>
 </head>
+
 <body>
-    <h1>Trilha Front-End</h1>
+
+    <!-- Cabeçalho -->
+
+    <nav>
+        <ul>
+            <li><img class="logo" src="../assets/Images/Icon.png"></li>
+            <li><a href="menu.html">Início</a></li>
+            <li><a href="trilhas.html">Trilhas de Carreira</a></li>
+            <li><a href="oportunidades.html">Oportunidades</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><img class="imgAcessibilidade" src="../assets/Images/acessibilidade.svg"><a href="#">Acessibilidade</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <main>
+
+        <!-- BREADCRUMB -->
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+            <ol>
+                <li>
+                    <!-- ÍCONE DE CASA -->
+                    <svg class="breadcrumb-icon-home" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                    </svg>
+                    <a href="menu.html">Início</a>
+                    <!-- Ícone de seta do Iconify/Material -->
+                    <svg class="breadcrumb-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                    </svg>
+                </li>
+                <li>
+                    <a href="trilhas.html">Trilhas</a>
+                    <svg class="breadcrumb-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                    </svg>
+                </li>
+                <li>
+                    <a href="#">Tecnologia</a>
+                    <svg class="breadcrumb-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                    </svg>
+                </li>
+                <li aria-current="page">Front-end</li>
+            </ol>
+        </nav>
+
+        <!-- HERO / CARROSSEL -->
+
+        <section class="hero">
+
+            <div class="hero-texto">
+
+                <h1>
+                    Trilha de Tecnologia<br>
+                    <span>Front-End</span>
+                </h1>
+
+                <p>
+                    Seu caminho para se tornar um desenvolvedor front-end.<br>
+                    Siga os passos, desenvolva suas habilidades <br> e conquiste oportunidades.
+                </p>
+
+
+            </div>
+
+        </section>
+
+         <!-- CARDS -->
+
+        <div class="trilha-wrapper">
+            <!-- CARDS PEQUENOS -->
+            <section class="trilha-info">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <span class="iconify" data-icon="mdi:book-open-outline"></span>
+                    </div>
+                    <div class="info-texto">
+                        <h4>Nível</h4>
+                        <p>Iniciante ao intermediário</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <span class="iconify" data-icon="mdi:clock-outline"></span>
+                    </div>
+                    <div class="info-texto">
+                        <h4>Duração estimada</h4>
+                        <p>De 6 a 9 meses</p>
+                    </div>
+                </div>
+
+                <div class="info-card-3">
+                    <div class="info-icon-3">
+                        <span class="iconify" data-icon="mdi:chart-line"></span>
+                    </div>
+                    <div class="info-texto-3">
+                        <h4>Objetivo</h4>
+                        <p>Preparar você para o mercado de trabalho</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CARD SOBRE -->
+
+            <aside class="card-sobre">
+                <h3>Sobre a trilha</h3>
+                <p>
+                    A trilha front-end foca nas tecnologias essenciais para criar
+                    interfaces modernas, responsivas e acessíveis. Você aprenderá
+                    desde a estrutura das páginas até a criação de interações dinâmicas.
+                </p>
+
+                <div class="card-destaque">
+                    <span class="iconify" data-icon="mdi:star"></span>
+                    <p>
+                        Ao concluir esta trilha, você estará
+                        pronto para buscar oportunidades como desenvolvedor front-end.
+                    </p>
+                </div>
+            </aside>
+        </div>
+
+        <!-- CAMINHO DE APRENDIZADO-->
+        <section class="caminho-aprendizado">
+            <div class="caminho-conteudo">
+                <h2>Seu caminho de aprendizado</h2>
+
+                <div class="progressos">
+                    <div class="progresso-item">
+                        <div class="progresso-topo">
+                            <span>Trilha técnica</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progresso-barra">
+                            <div class="progresso-preenchimento" style="width: 70%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="progresso-item">
+                        <div class="progresso-topo">
+                            <span>Soft Skills</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="progresso-barra">
+                            <div class="progresso-preenchimento" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="legenda-niveis">
+                <div class="legenda-item">
+                    <span class="bolinha essencial"></span>
+                    <p>Essencial</p>
+                </div>
+                <div class="legenda-item">
+                    <span class="bolinha importante"></span>
+                    <p>Importante</p>
+                </div>
+                <div class="legenda-item">
+                    <span class="bolinha complementar"></span>
+                    <p>Complementar</p>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+
+        <div>
+
+            <img class="logo" src="../assets/Imagens/Icon.png" alt="Logo">
+
+        </div>
+
+
+        <div>
+
+            <h3>Contato</h3>
+
+            <p>contato@trilhando.com</p>
+
+        </div>
+
+    </footer>
+
+
 </body>
+
 </html>

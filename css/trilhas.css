@@ -1,0 +1,502 @@
+/* reset de estilos */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family: "Poppins", sans-serif;
+
+    background: #06040D;
+    /* tema dark */
+
+    color: white;
+
+}
+
+/* Cabeçalho */
+
+nav {
+    background-color: black;
+    user-select: none;
+    padding: 10px 20px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.logo {
+    height: 50px;
+}
+
+
+.imgAcessibilidade {
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+/* Hover dos links */
+
+nav ul li a:hover {
+    color: #CD97EB;
+    /* hover roxo claro */
+    transition: color 0.3s;
+}
+
+/* BREADCRUMB */
+.breadcrumb {
+    padding: 16px 0;
+    font-size: 14px;
+    margin-left: 40px;
+    background-color: #06040D;
+}
+
+
+.breadcrumb ol {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumb li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.breadcrumb a {
+    color: #d6d6d6;
+    /* tom cinza claro */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+    color: #CD97EB;
+    /*  roxo hover */
+    text-decoration: underline;
+}
+
+.breadcrumb-icon-home {
+    width: 16px;
+    height: 16px;
+    color: #00FF55;
+
+}
+
+.breadcrumb-icon {
+    width: 16px;
+    height: 16px;
+    color: #B8B5FF;
+    flex-shrink: 0;
+}
+
+/* Esconde a seta do último item */
+.breadcrumb li:last-child .breadcrumb-icon {
+    display: none;
+}
+
+/* Página atual - sem link */
+.breadcrumb li[aria-current="page"] {
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+/* Carrosel / Hero */
+
+.hero {
+
+    width: 100%;
+    height: 700px;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 70px;
+
+    background-image:
+        linear-gradient(90deg,
+            rgba(0, 0, 0, .95) 0%,
+            rgba(0, 0, 0, .78) 30%,
+            rgba(0, 0, 0, .18) 55%,
+            rgba(0, 0, 0, .05) 100%),
+        url("../assets/Images/hero-banner.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-texto {
+
+    width: 500px;
+
+}
+
+.hero-texto h1 {
+
+    color: white;
+
+    font-size: 70px;
+
+    font-weight: 800;
+
+    line-height: .92;
+
+    margin-bottom: 35px;
+
+}
+
+.hero-texto span {
+
+    color: #8F3EF7;
+
+}
+
+.hero-texto p {
+
+    color: #d6d6d6;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 45px;
+
+    width: 500px;
+
+}
+
+/* Cards */
+
+.trilha-wrapper {
+    display: flex;
+    gap: 24px;
+    padding: 40px 70px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+}
+
+/* CARDS PEQUENOS */
+.trilha-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    width: 62%;
+}
+
+.info-card {
+    background: #1E1A3A;
+    border: 1px solid #2E2950;
+    border-radius: 14px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.info-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: rgba(143, 62, 247, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-icon .iconify {
+    width: 20px;
+    height: 20px;
+    color: #8F3EF7;
+}
+
+.info-texto h4 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #B8B5FF;
+    margin: 0 0 2px 0;
+    text-transform: uppercase;
+}
+
+.info-texto p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/* card 3 */
+
+.info-card-3 {
+    background: #1E1A3A;
+    border: 1px solid #2E2950;
+    border-radius: 14px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.info-icon-3 {
+    width: 58px;
+    height: 38px;
+    border-radius: 10px;
+    background: rgba(143, 62, 247, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-icon-3 .iconify {
+    width: 20px;
+    height: 20px;
+    color: #8F3EF7;
+}
+
+.info-texto-3 {
+    margin-left: 4px;
+}
+
+.info-texto-3 h4 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #B8B5FF;
+    margin: 0 0 2px 0;
+    text-transform: uppercase;
+}
+
+.info-texto-3 p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/* CARD VERDE ESCURO */
+.card-sobre {
+    width: 35%;
+    background: #001A05;
+    margin-top: -150px;
+    border-radius: 16px;
+    padding: 28px 24px;
+    color: #FFFFFF;
+}
+
+.card-sobre h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+}
+
+.card-sobre>p {
+    /* paragrafo principal */
+    font-size: 15px;
+    line-height: 1.6;
+    color: #D1FAE5;
+    margin: 0 0 20px 0;
+}
+
+/* BOX INTERNO VERDE CLARO */
+.card-destaque {
+    background: #02420F;
+    /* verde mais claro */
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.card-destaque .iconify {
+    width: 24px;
+    height: 24px;
+    color: #A855F7;
+    /* roxo da estrela */
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.card-destaque p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ECFDF5;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* CAMINHO DE APRENDIZADO - NOVO LAYOUT */
+.caminho-aprendizado {
+    padding: 0 70px 40px 70px;
+    /* subiu, tirou padding-top */
+    display: flex;
+    justify-content: space-between;
+    /* joga legenda pra direita */
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.caminho-conteudo {
+    width: 62%;
+    /* mesma largura dos cards */
+}
+
+.caminho-aprendizado h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    color: #FFFFFF;
+}
+
+.progressos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.progresso-topo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 600;
+    color: #B8B5FF;
+    margin-bottom: 8px;
+}
+
+.progresso-barra {
+    width: 100%;
+    height: 10px;
+    background: #2E2950;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progresso-preenchimento {
+    height: 100%;
+    background: linear-gradient(90deg, #8F3EF7 0%, #4ADE80 100%);
+    border-radius: 10px;
+}
+
+/* LEGENDA NA DIREITA */
+.legenda-niveis {
+    display: flex;
+    flex-direction: column;
+    /* fica em coluna na direita */
+    gap: 10px;
+    padding-top: 40px;
+    /* alinha com as barras */
+}
+
+.legenda-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.legenda-item p {
+    font-size: 14px;
+    color: #B8B5FF;
+    margin: 0;
+}
+
+.bolinha {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.bolinha.essencial {
+    background: #4ADE80;
+}
+
+.bolinha.importante {
+    background: #8F3EF7;
+}
+
+.bolinha.complementar {
+    background: #6366F1;
+}
+
+/* RESPONSIVO */
+@media (max-width: 992px) {
+
+    .trilha-wrapper,
+    .caminho-aprendizado {
+        flex-direction: column;
+        padding: 24px;
+    }
+
+    .trilha-info,
+    .caminho-conteudo,
+    .card-sobre {
+        width: 100%;
+    }
+
+    .legenda-niveis {
+        flex-direction: row;
+        /* volta pra linha no mobile */
+        padding-top: 0;
+    }
+}
+
+/* Para abrir em tablets */
+
+@media (max-width: 900px) {
+
+    nav ul {
+        justify-content: center;
+        gap: 30px;
+    }
+
+}
+
+/* Para abrir em celulares */
+
+
+@media (max-width: 600px) {
+
+    nav {
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo {
+        height: 45px;
+    }
+
+}
