@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/menu.css">
-    <title>navbar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Trilhando</title>
 </head>
 
 <body>
-    <!-- Cabeçalho -->
+     <!-- ==================== CABEÇALHO ==================== -->
 
    <nav>
     <ul>
@@ -18,10 +19,10 @@
         <li><a href="trilhas.html">Trilhas de Carreira</a></li>
         <li><a href="oportunidades.html">Oportunidades</a></li>
         <li><a href="sobre.html">Sobre</a></li>
-        <li><img class="imgAcessibilidade" src="/assets/botaoAcessibilidade.png"><a href="#">Acessibilidade</a></li>
+        <li><img class="imgAcessibilidade" src="../assets/icons/acessibilidade.svg"><a href="#">Acessibilidade</a></li>
     </ul>
 </nav>
- <!-- Conteudo -->
+  <!-- ==================== CONTEÚDO ==================== -->
 
     <main>
 
@@ -52,175 +53,314 @@
 </section>
 
         <!-- Como funciona -->
+<section class="comoFunciona">
 
-        <section class="comoFunciona">
+    <h2>Como funciona?</h2>
 
-            <h2>Como funciona?</h2>
+    <div class="cards">
 
-            <div class="cards">
+        <article class="card">
 
-                <article class="card">
+            <span class="icone">◎</span>
+            <span class="numero">1</span>
 
-                    <h3>Descubra áreas</h3>
+            <h3>Escolha uma área</h3>
 
-                    <p>
-                        Conheça diversas carreiras e descubra aquela que combina
-                        com você.
-                    </p>
+            <p>
+                Explore diferentes áreas profissionais e descubra seus interesses.
+            </p>
 
-                </article>
+        </article>
 
-                <article class="card">
+        <article class="card">
 
-                    <h3>Siga uma trilha</h3>
+            <span class="icone">◉</span>
+            <span class="numero">2</span>
 
-                    <p>
-                        Aprenda passo a passo o que estudar para entrar na área.
-                    </p>
+            <h3>Siga uma trilha</h3>
 
-                </article>
+            <p>
+                Acompanhe competências essenciais e cursos gratuitos para cada etapa.
+            </p>
 
-                <article class="card">
+        </article>
 
-                    <h3>Encontre oportunidades</h3>
+        <article class="card">
 
-                    <p>
-                        Veja vagas, cursos e programas disponíveis.
-                    </p>
+            <span class="icone">◉</span>
+            <span class="numero">3</span>
 
-                </article>
+            <h3>Encontre oportunidades</h3>
 
-            </div>
+            <p>
+                Veja vagas e oportunidades alinhadas ao que você está aprendendo.
+            </p>
 
-        </section>
+        </article>
 
-        <!-- Áreas -->
+    </div>
 
-        <section class="areas">
+</section>
 
-            <h2>Áreas profissionais</h2>
+       <!-- Áreas -->
+<section class="areas">
 
-            <div class="cardsAreas">
+    <h2>Áreas profissionais</h2>
 
-                <article class="cardArea">
-                    Tecnologia
-                </article>
+    <div class="cardsAreas">
 
-                <article class="cardArea">
-                    Administração
-                </article>
+        <article class="cardArea destaque">
 
-                <article class="cardArea">
-                    Saúde
-                </article>
+            <span class="icone">💻</span>
 
-                <article class="cardArea">
-                    Design
-                </article>
+            <h3>Tecnologia</h3>
 
-            </div>
+            <p>
+                Desenvolvimento de software, dados, infraestrutura e mais.
+            </p>
 
-        </section>
+            <button>Explore</button>
+
+        </article>
+
+        <article class="cardArea">
+
+            <span class="icone">🏢</span>
+
+            <h3>Administração</h3>
+
+            <p>
+                Gestão, finanças, recursos humanos e negócios.
+            </p>
+
+            <button>Explore</button>
+
+        </article>
+
+        <article class="cardArea">
+
+            <span class="icone">📢</span>
+
+            <h3>Marketing</h3>
+
+            <p>
+                Comunicação, estratégia, conteúdo e crescimento.
+            </p>
+
+            <button>Explore</button>
+
+        </article>
+
+        <article class="cardArea">
+
+            <span class="icone">🎨</span>
+
+            <h3>Design</h3>
+
+            <p>
+                Criação, UX/UI, identidade visual e experiência.
+            </p>
+
+            <button>Explore</button>
+
+        </article>
+
+    </div>
+
+</section>
 
         <!-- Oportunidades -->
+<section class="oportunidades">
 
-        <section class="oportunidades">
+    <h2>Oportunidades em destaque</h2>
 
-            <h2>Oportunidades em destaque</h2>
+    <div class="cardsOportunidades">
 
-            <div class="cardsOportunidades">
+        <article class="cardOportunidade">
 
-                <article class="cardOportunidade">
+            <span class="tipo">Estágio</span>
 
-                    <h3>Estágio TI</h3>
+            <h3>Estágio TI</h3>
 
-                    <p>Empresa XPTO</p>
+            <p class="empresa">Empresa XPTO</p>
 
-                </article>
+            <p class="local">📍 São Paulo - SP</p>
 
-                <article class="cardOportunidade">
-
-                    <h3>Jovem Aprendiz</h3>
-
-                    <p>Empresa ABC</p>
-
-                </article>
-
-                <article class="cardOportunidade">
-
-                    <h3>Bootcamp</h3>
-
-                    <p>Inscrições abertas.</p>
-
-                </article>
-
+            <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
             </div>
 
-        </section>
+            <a href="#">Ver detalhes →</a>
 
-        <!-- Sobre -->
+        </article>
 
-        <section class="sobre">
+        <article class="cardOportunidade">
 
-            <div class="sobreImagem">
+            <span class="tipo">Jovem Aprendiz</span>
 
-                <img src="../assets/Imagens/sobre.png" alt="Sobre a Trilhando">
+            <h3>Jovem Aprendiz</h3>
 
+            <p class="empresa">Empresa ABC</p>
+
+            <p class="local">📍 São Paulo - SP</p>
+
+            <div class="tags">
+                <span>Informática</span>
+                <span>Suporte</span>
+                <span>Aprendizado</span>
             </div>
 
-            <div class="sobreTexto">
+        </article>
 
-                <h2>Sobre a Trilhando</h2>
+        <article class="cardOportunidade">
 
-                <p>
-                    A Trilhando conecta estudantes às oportunidades certas,
-                    oferecendo trilhas de aprendizado e informações para o
-                    primeiro passo na carreira.
-                </p>
+            <span class="tipo">Efetivo</span>
 
+            <h3>Bootcamp</h3>
+
+            <p class="empresa">Empresa XYZ</p>
+
+            <p class="local">🌎 Remoto</p>
+
+            <div class="tags">
+                <span>React</span>
+                <span>CSS</span>
+                <span>Git</span>
             </div>
 
-        </section>
+        </article>
+
+    </div>
+
+    <button class="btnTodas">
+        Ver todas as oportunidades
+    </button>
+
+</section>
+
+<!-- Sobre -->
+
+<section class="sobre">
+
+    <div class="sobreImagem">
+        <img src="../assets/Images/sobreTrilhando.png" alt="Sobre a Trilhando">
+    </div>
+
+    <div class="sobreTexto">
+
+        <h2>Sobre a Trilhando</h2>
+
+        <p>
+            A Trilhando conecta estudantes às oportunidades certas,
+            oferecendo trilhas de aprendizado e informações para o
+            primeiro passo na carreira.
+        </p>
+
+        <div class="sobreInfo">
+
+            <div class="info">
+                <i class="bi bi-people"></i>
+                <span>Inclusão e<br>acessibilidade</span>
+            </div>
+
+            <div class="info">
+                <i class="bi bi-book"></i>
+                <span>Educação para<br>o futuro</span>
+            </div>
+
+            <div class="info">
+                <i class="bi bi-bar-chart"></i>
+                <span>Oportunidades<br>reais</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
     </main>
 
     <!-- ==================== RODAPÉ ==================== -->
+<footer class="footer">
 
-    <footer>
+    <div class="footerContainer">
 
-        <div>
+        <div class="footerLogo">
 
-            <img class="logo" src="../assets/Imagens/Icon.png" alt="Logo">
+            <img class="logo" src="../assets/Images/Icon.png" alt="Logo">
+
+            <p>
+                Seu caminho para um futuro melhor.
+            </p>
+
+            <div class="footerLinks">
+                <a href="#">Privacidade</a>
+                <a href="#">Termos de Uso</a>
+            </div>
 
         </div>
 
-        <div>
+        <div class="footerCol">
 
             <h3>Navegação</h3>
 
             <ul>
-
                 <li><a href="../index.html">Início</a></li>
-
-                <li><a href="trilhas.html">Trilhas</a></li>
-
+                <li><a href="trilhas.html">Trilhas de Carreira</a></li>
                 <li><a href="oportunidades.html">Oportunidades</a></li>
-
                 <li><a href="sobre.html">Sobre</a></li>
-
             </ul>
 
         </div>
 
-        <div>
+        <div class="footerCol">
 
-            <h3>Contato</h3>
+            <h3>Recursos</h3>
 
-            <p>contato@trilhando.com</p>
+            <ul>
+                <li><a href="#">Como funciona</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Dicas de Carreira</a></li>
+                <li><a href="#">Conteúdos</a></li>
+            </ul>
 
         </div>
 
-    </footer>
-</body>
+        <div class="footerCol">
 
+            <h3>Contato</h3>
+
+            <p>team.trilhando@gmail.com</p>
+
+            <div class="redes">
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-youtube"></i>
+            </div>
+
+        </div>
+
+        <div class="footerCol">
+
+            <h3>Acessibilidade</h3>
+
+            <p>A+ &nbsp;&nbsp; A-</p>
+
+            <button class="vlibras">
+                VLibras
+            </button>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<div class="copyright">
+    © 2026 Trilhando. Todos os direitos reservados.
+</div>
+</body>
 </html>
