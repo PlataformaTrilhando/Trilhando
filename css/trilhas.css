@@ -69,6 +69,38 @@ nav ul li a:hover {
     transition: color 0.3s;
 }
 
+/* Para abrir em tablets */
+
+@media (max-width: 900px) {
+
+    nav ul {
+        justify-content: center;
+        gap: 30px;
+    }
+
+}
+
+/* Para abrir em celulares */
+
+
+@media (max-width: 600px) {
+
+    nav {
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo {
+        height: 45px;
+    }
+
+}
+
 /* BREADCRUMB */
 .breadcrumb {
     padding: 16px 0;
@@ -355,148 +387,93 @@ nav ul li a:hover {
     font-weight: 500;
 }
 
-/* CAMINHO DE APRENDIZADO - NOVO LAYOUT */
+/* SEÇÃO CAMINHO DE APRENDIZADO */
 .caminho-aprendizado {
-    padding: 0 70px 40px 70px;
-    /* subiu, tirou padding-top */
-    display: flex;
-    justify-content: space-between;
-    /* joga legenda pra direita */
-    align-items: flex-start;
-    gap: 24px;
+  padding: 0 70px 40px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /* ISSO alinha a legenda com a 2a barra */
+  gap: 24px;
 }
 
 .caminho-conteudo {
-    width: 62%;
-    /* mesma largura dos cards */
+  flex: 1; /* ocupa todo espaço restante */
 }
 
-.caminho-aprendizado h2 {
-    font-size: 22px;
-    font-weight: 700;
-    margin: 0 0 20px 0;
-    color: #FFFFFF;
+.caminho-conteudo h2 {
+  font-size: 24px;
+  color: #FFFFFF;
+  margin: 0 0 24px 0;
+  font-weight: 700;
 }
 
-.progressos {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+/* ITENS COM BARRA */
+.item-trilha {
+  margin-bottom: 20px;
 }
 
-.progresso-topo {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    font-weight: 600;
-    color: #B8B5FF;
-    margin-bottom: 8px;
+.item-trilha .titulo {
+  font-size: 14px;
+  color: #D1D5DB;
+  margin: 0 0 8px 0;
+  display: flex;
+  justify-content: space-between; /* se quiser o % do lado */
 }
 
-.progresso-barra {
-    width: 100%;
-    height: 10px;
-    background: #2E2950;
-    border-radius: 10px;
-    overflow: hidden;
+.barra {
+  width: 100%;
+  height: 8px;
+  background: #312E81; /* fundo da barra roxa escura */
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.progresso-preenchimento {
-    height: 100%;
-    background: linear-gradient(90deg, #8F3EF7 0%, #4ADE80 100%);
-    border-radius: 10px;
+.progresso {
+  height: 100%;
+  background: linear-gradient(90deg, #8B5CF6, #A855F7); /* roxo gradiente */
+  border-radius: 10px;
 }
 
-/* LEGENDA NA DIREITA */
+/* LEGENDA LADO A LADO NA DIREITA */
 .legenda-niveis {
-    display: flex;
-    flex-direction: column;
-    /* fica em coluna na direita */
-    gap: 10px;
-    padding-top: 40px;
-    /* alinha com as barras */
+  display: flex;
+  flex-direction: row; /* lado a lado */
+  gap: 20px;
+  padding-bottom: 4px; /* sobe um pouco pra ficar no meio das 2 barras */
+  flex-shrink: 0; /* não deixa espremer */
+  flex-wrap: wrap; /* quebra linha no responsivo */
 }
 
 .legenda-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #D1D5DB;
+  white-space: nowrap;
 }
 
-.legenda-item p {
-    font-size: 14px;
-    color: #B8B5FF;
-    margin: 0;
-}
-
+/* BOLINHAS COLORIDAS */
 .bolinha {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 
-.bolinha.essencial {
-    background: #4ADE80;
-}
-
-.bolinha.importante {
-    background: #8F3EF7;
-}
-
-.bolinha.complementar {
-    background: #6366F1;
-}
+.bolinha.essencial { background: #8B5CF6; } /* roxo */
+.bolinha.importante { background: #A855F7; } /* roxo claro */
+.bolinha.complementar { background: #C4B5FD; } /* roxo bem claro */
 
 /* RESPONSIVO */
 @media (max-width: 992px) {
+  .caminho-aprendizado {
+    flex-direction: column; /* vira coluna no mobile */
+    align-items: flex-start;
+    padding: 0 24px 40px 24px;
+  }
 
-    .trilha-wrapper,
-    .caminho-aprendizado {
-        flex-direction: column;
-        padding: 24px;
-    }
-
-    .trilha-info,
-    .caminho-conteudo,
-    .card-sobre {
-        width: 100%;
-    }
-
-    .legenda-niveis {
-        flex-direction: row;
-        /* volta pra linha no mobile */
-        padding-top: 0;
-    }
-}
-
-/* Para abrir em tablets */
-
-@media (max-width: 900px) {
-
-    nav ul {
-        justify-content: center;
-        gap: 30px;
-    }
-
-}
-
-/* Para abrir em celulares */
-
-
-@media (max-width: 600px) {
-
-    nav {
-        padding: 15px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .logo {
-        height: 45px;
-    }
-
+  .legenda-niveis {
+    padding-bottom: 0;
+    padding-top: 16px; /* espaço quando descer */
+  }
 }
