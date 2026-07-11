@@ -7,6 +7,8 @@
     <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
     <link rel="stylesheet" href="../css/trilhas.css">
     <title>Trilhas</title>
+
+
 </head>
 
 <body>
@@ -17,7 +19,7 @@
         <ul>
             <li><img class="logo" src="../assets/Images/Icon.png"></li>
             <li><a href="menu.html">Início</a></li>
-            <li><a href="trilhas.html">Trilhas de Carreira</a></li>
+            <li><a class="ativo" href="#">Trilhas de Carreira</a></li>
             <li><a href="oportunidades.html">Oportunidades</a></li>
             <li><a href="sobre.html">Sobre</a></li>
             <li><img class="imgAcessibilidade" src="../assets/Images/acessibilidade.svg"><a href="#">Acessibilidade</a>
@@ -83,7 +85,7 @@
 
         </section>
 
-         <!-- CARDS -->
+        <!-- CARDS -->
 
         <div class="trilha-wrapper">
             <!-- CARDS PEQUENOS -->
@@ -139,73 +141,477 @@
             </aside>
         </div>
 
-        <!-- CAMINHO DE APRENDIZADO-->
+        <!-- CAMINHO DE APRENDIZADO -->
         <section class="caminho-aprendizado">
             <div class="caminho-conteudo">
                 <h2>Seu caminho de aprendizado</h2>
 
-                <div class="progressos">
-                    <div class="progresso-item">
-                        <div class="progresso-topo">
-                            <span>Trilha técnica</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="progresso-barra">
-                            <div class="progresso-preenchimento" style="width: 70%;"></div>
-                        </div>
-                    </div>
-
-                    <div class="progresso-item">
-                        <div class="progresso-topo">
-                            <span>Soft Skills</span>
-                            <span>40%</span>
-                        </div>
-                        <div class="progresso-barra">
-                            <div class="progresso-preenchimento" style="width: 40%;"></div>
-                        </div>
-                    </div>
+                <!-- LEGENDA -->
+                <div class="legenda">
+                    <span><img src="../assets/Images/bolinha-verde.png" alt=""> Essencial</span>
+                    <span><img src="../assets/Images/bolinha-roxa.png" alt=""> Importante</span>
+                    <span><img src="../assets/Images/bolinha-cinza.png" alt=""> Complementar</span>
                 </div>
+
             </div>
+        </section>
 
-            <div class="legenda-niveis">
-                <div class="legenda-item">
-                    <span class="bolinha essencial"></span>
-                    <p>Essencial</p>
+        <!-- TRILHA TÉCNICA DETALHADA -->
+        <section class="trilha-detalhada tecnica">
+            <div class="trilha-conteudo">
+                <h2>Trilha Técnica</h2>
+
+                <!-- BARRA DE PROGRESSO -->
+                <div class="progresso-container">
+                    <p>Seu progresso: <span id="progresso-texto-tec">0%</span></p>
+                    <div class="barra-progresso">
+                        <div class="barra-progresso-preenchida" id="barra-progresso-tec"></div>
+                    </div>
                 </div>
-                <div class="legenda-item">
-                    <span class="bolinha importante"></span>
-                    <p>Importante</p>
-                </div>
-                <div class="legenda-item">
-                    <span class="bolinha complementar"></span>
-                    <p>Complementar</p>
+
+
+                <div class="trilha-scroll">
+
+                    <!-- PASSO 1 -->
+                    <div class="item-trilha">
+                        <div class="linha-numero">
+                            <div class="bolinha">1</div>
+                            <div class="linha"></div>
+                        </div>
+                        <div class="card-item">
+                            <div class="card-info">
+                                <input type="checkbox" class="check-item-tec">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                    alt="HTML">
+                                <div>
+                                    <h4>HTML</h4>
+                                    <p>Aprenda a estrutura de páginas web com tags e semântica</p>
+                                    <span class="tag essencial">Essencial</span>
+                                </div>
+                            </div>
+                            <div class="card-recursos">
+                                <p>Recursos recomendados</p>
+                                <div class="recursos-icons">
+                                    <span>📹 Curso em vídeo</span>
+                                    <span>M Documentação</span>
+                                </div>
+                            </div>
+                            <button class="btn-detalhes">Ver detalhes</button>
+                        </div>
+                    </div>
+
+                    <!-- PASSO 2 -->
+                    <div class="item-trilha">
+                        <div class="linha-numero">
+                            <div class="bolinha">2</div>
+                            <div class="linha"></div>
+                        </div>
+                        <div class="card-item">
+                            <div class="card-info">
+                                <input type="checkbox" class="check-item-tec">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                    alt="CSS">
+                                <div>
+                                    <h4>CSS</h4>
+                                    <p>Estilize páginas e torne responsivas</p>
+                                    <span class="tag essencial">Essencial</span>
+                                </div>
+                            </div>
+                            <div class="card-recursos">
+                                <p>Recursos recomendados</p>
+                                <div class="recursos-icons">
+                                    <span>📹 Curso em vídeo</span>
+                                    <span>Flexbox Froggy</span>
+                                </div>
+                            </div>
+                            <button class="btn-detalhes">Ver detalhes</button>
+                        </div>
+                    </div>
+
+                    <!-- PASSO 3 -->
+                    <div class="item-trilha">
+                        <div class="linha-numero">
+                            <div class="bolinha">3</div>
+                            <div class="linha"></div>
+                        </div>
+                        <div class="card-item">
+                            <div class="card-info">
+                                <input type="checkbox" class="check-item-tec">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript-original.svg"
+                                    alt="JS">
+                                <div>
+                                    <h4>JavaScript</h4>
+                                    <p>Adicione interatividade e lógica</p>
+                                    <span class="tag essencial">Essencial</span>
+                                </div>
+                            </div>
+                            <div class="card-recursos">
+                                <p>Recursos recomendados</p>
+                                <div class="recursos-icons">
+                                    <span>📹 Curso em vídeo</span>
+                                    <span>JS 30 Desafios</span>
+                                </div>
+                            </div>
+                            <button class="btn-detalhes">Ver detalhes</button>
+                        </div>
+                    </div>
+
+                    <!-- PASSO 4 -->
+                    <div class="item-trilha">
+                        <div class="linha-numero">
+                            <div class="bolinha">4</div>
+                            <div class="linha"></div>
+                        </div>
+                        <div class="card-item">
+                            <div class="card-info">
+                                <input type="checkbox" class="check-item-tec">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git-original.svg"
+                                    alt="Git">
+                                <div>
+                                    <h4>Git e Github</h4>
+                                    <p>Controle de versão e hospedagem</p>
+                                    <span class="tag importante">Importante</span>
+                                </div>
+                            </div>
+                            <div class="card-recursos">
+                                <p>Recursos recomendados</p>
+                                <div class="recursos-icons">
+                                    <span>📹 Curso em vídeo</span>
+                                    <span>Git Docs</span>
+                                </div>
+                            </div>
+                            <button class="btn-detalhes">Ver detalhes</button>
+                        </div>
+                    </div>
+
+                    <!-- PASSO 5 -->
+                    <div class="item-trilha">
+                        <div class="linha-numero">
+                            <div class="bolinha">5</div>
+                        </div>
+                        <div class="card-item">
+                            <div class="card-info">
+                                <input type="checkbox" class="check-item-tec">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Projeto">
+                                <div>
+                                    <h4>Projeto Prático</h4>
+                                    <p>Construa um site completo do zero</p>
+                                    <span class="tag essencial">Essencial</span>
+                                </div>
+                            </div>
+                            <div class="card-recursos">
+                                <p>Recursos recomendados</p>
+                                <div class="recursos-icons">
+                                    <span>📋 Especificação</span>
+                                    <span>🎨 Figma</span>
+                                </div>
+                            </div>
+                            <button class="btn-detalhes">Ver detalhes</button>
+                        </div>
+                    </div>
+
+                    <!-- PASSO 6 BLOQUEADO -->
+                    <div class="item-trilha bloqueado">
+                        <div class="linha-numero">
+                            <div class="bolinha">6</div>
+                        </div>
+                        <div class="card-item">
+                            <div class="card-info">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png" alt="Lock">
+                                <div>
+                                    <h4>Nível Intermediário</h4>
+                                    <p>Conteúdo será liberado após concluir o básico</p>
+                                </div>
+                            </div>
+                            <button class="btn-detalhes disabled">Em breve</button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
+        <!-- TRILHA SOFT SKILLS -->
+        <section class="trilha-detalhada soft-skills">
+            <div class="trilha-conteudo">
+                <h2>Soft Skills</h2>
+
+                <!-- Barra de progresso -->
+                <div class="progresso-container">
+                    <p>Seu progresso: <span id="progresso-texto-soft">0%</span></p>
+                    <div class="barra-progresso">
+                        <div class="barra-progresso-preenchida" id="barra-progresso-soft"></div>
+                    </div>
+                </div>
+
+                <div class="trilha-scroll">
+
+                    <!-- ITEM 1 -->
+                    <div class="item-trilha">
+                        <div class="linha-numero">
+                            <div class="bolinha">1</div>
+                            <div class="linha"></div>
+                        </div>
+                        <div class="card-item">
+                            <div class="card-info">
+                                <input type="checkbox" class="check-item-soft">
+                                <img src="assets/icons/comunicacao.svg" alt="Comunicação">
+                                <div>
+                                    <h4>Comunicação e Trabalho em equipe</h4>
+                                    <p>Aprenda a se comunicar de forma clara e colaborar com a sua equipe profissional
+                                    </p>
+                                    <span class="tag essencial">Essencial</span>
+                                </div>
+                            </div>
+                            <div class="card-recursos">
+                                <p>Recursos recomendados</p>
+                                <div class="recursos-icons">
+                                    <span>📄 Comunicação eficaz</span>
+                                    <span>💻 Trabalho em equipe</span>
+                                    <span>🎯 Projetos</span>
+                                </div>
+                            </div>
+                            <button class="btn-detalhes">Ver mais</button>
+                        </div>
+                    </div>
+
+                    <!-- ITEM 2 -->
+                    <div class="item-trilha">
+                        <div class="linha-numero">
+                            <div class="bolinha">2</div>
+                            <div class="linha"></div>
+                        </div>
+                        <div class="card-item">
+                            <div class="card-info">
+                                <input type="checkbox" class="check-item-soft">
+                                <img src="assets/icons/tempo.svg" alt="Gestão de tempo">
+                                <div>
+                                    <h4>Gestão de tempo e Produtividade</h4>
+                                    <p>Organize tarefas, prazos e metas.</p>
+                                    <span class="tag essencial">Essencial</span>
+                                </div>
+                            </div>
+                            <div class="card-recursos">
+                                <p>Recursos recomendados</p>
+                                <div class="recursos-icons">
+                                    <span>📄 Produtividade</span>
+                                    <span>💻 Método Kanban</span>
+                                    <span>🎯 Gestão de tempo</span>
+                                </div>
+                            </div>
+                            <button class="btn-detalhes">Ver mais</button>
+                        </div>
+                    </div>
+
+                    <!-- ITEM 3 -->
+                    <div class="item-trilha">
+                        <div class="linha-numero">
+                            <div class="bolinha">3</div>
+                            <div class="linha"></div>
+                        </div>
+                        <div class="card-item">
+                            <div class="card-info">
+                                <input type="checkbox" class="check-item-soft">
+                                <img src="assets/icons/problema.svg" alt="Resolução de problemas">
+                                <div>
+                                    <h4>Resolução de Problemas</h4>
+                                    <p>Desenvolva habilidades para resolver conflitos, lidar com imprevistos e dar
+                                        soluções criativas.</p>
+                                    <span class="tag importante">Importante</span>
+                                </div>
+                            </div>
+                            <div class="card-recursos">
+                                <p>Recursos recomendados</p>
+                                <div class="recursos-icons">
+                                    <span>📄 Lógica</span>
+                                    <span>💻 Pensamento crítico</span>
+                                    <span>🎯 Resolver problemas</span>
+                                </div>
+                            </div>
+                            <button class="btn-detalhes">Ver mais</button>
+                        </div>
+                    </div>
+
+                    <!-- ITEM 4 BLOQUEADO -->
+                    <div class="item-trilha bloqueado">
+                        <div class="linha-numero">
+                            <div class="bolinha">🔒</div>
+                        </div>
+                        <div class="card-item">
+                            <div class="card-info">
+                                <div>
+                                    <h4>Nível Intermediário</h4>
+                                    <p>Complete os 3 níveis anteriores para desbloquear este módulo</p>
+                                    <span class="tag complementar">Bloqueado</span>
+                                </div>
+                            </div>
+                            <button class="btn-detalhes disabled">Em breve</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CARD FINAL CTA -->
+
+        <section class="card-final">
+            <div class="card-cta">
+                <div class="cta-icon">
+                    <img src="../assets/Images/foguete-icone.png" alt="">
+                </div>
+                <div class="card-cta-texto">
+                    <h4>Pronto para o próximo passo?</h4>
+                    <p>Explore oportunidades alinhadas às habilidades desta trilha<br>
+                        e dê o próximo passo na sua carreira.</p>
+                </div>
+                <button class="btn-cta">Ver oportunidades ></button>
+            </div>
+        </section>
+
+        <!-- SECTION LEGENDA / CARACTERISTICAS -->
+        <section class="section-legenda">
+            <div class="container-legenda">
+
+                <div class="item-legenda">
+                    <div class="icon-legenda">
+                        <img src="../assets/Images/relogio-lg.svg" alt="imagem de relógio">
+                    </div>
+                    <div class="texto-legenda">
+                        <h4>Aprendizado no seu ritmo</h4>
+                        <p>Estude quando e onde quiser</p>
+                    </div>
+                </div>
+
+                <div class="item-legenda">
+                    <div class="icon-legenda">
+                        <img src="../assets/Images/dinheiro-lg.svg" alt="">
+                    </div>
+                    <div class="texto-legenda">
+                        <h4>Conteúdo gratuito</h4>
+                        <p>Acesso total sem custos</p>
+                    </div>
+                </div>
+
+                <div class="item-legenda">
+                    <div class="icon-legenda">
+                        <img src="../assets/Images/focado-lg.png" alt="">
+                    </div>
+                    <div class="texto-legenda">
+                        <h4>Focado no mercado</h4>
+                        <p>Habilidades que as empresas buscam</p>
+                    </div>
+                </div>
+
+                <div class="item-legenda">
+                    <div class="icon-legenda">
+                        <img src="../assets/Images/olho-lg.svg" alt="">
+                    </div>
+                    <div class="texto-legenda">
+                        <h4>Acessível para todos</h4>
+                        <p>Conteúdo didático e inclusivo</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
     </main>
 
-    <footer>
+    <!-- FOOTER -->
+    <footer class="footer-trilhas">
+        <div class="container-footer">
+            <div class="footer-col footer-logo">
+                <img src="assets/logo-branco.svg" alt="Logo">
+                <p>Seu caminho para um futuro melhor.</p>
+                <div class="footer-links-pequenos">
+                    <a href="#">Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
 
-        <div>
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <a href="#">Início</a>
+                <a href="#">Trilhas de Carreira</a>
+                <a href="#">Oportunidades</a>
+                <a href="#">Sobre</a>
+            </div>
 
-            <img class="logo" src="../assets/Imagens/Icon.png" alt="Logo">
+            <div class="footer-col">
+                <h4>Recursos</h4>
+                <a href="#">Como funciona</a>
+                <a href="#">FAQ</a>
+                <a href="#">Dicas de Carreira</a>
+                <a href="#">Comunidade</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <a href="mailto:contato@trilhando.com">contato@trilhando.com</a>
+                <div class="footer-social">
+                    <a href="#">IG</a>
+                    <a href="#">IN</a>
+                    <a href="#">YT</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Acessibilidade</h4>
+                <div class="footer-acessibilidade">
+                    <button>A+ A- A</button>
+                </div>
+                <button class="btn-alto-contraste">Alto Contraste</button>
+            </div>
 
         </div>
-
-
-        <div>
-
-            <h3>Contato</h3>
-
-            <p>contato@trilhando.com</p>
-
+        <div class="footer-copy">
+            <p>© 2026 Trilhando. Todos os direitos reservados.</p>
         </div>
-
     </footer>
+
+    <!-- JS -->
+    <script>
+        function atualizarProgresso(trilhaClasse, checkClasse, barraId, textoId) {
+            const barra = document.getElementById(barraId);
+            const texto = document.getElementById(textoId);
+            const checkboxes = document.querySelectorAll(`.${trilhaClasse} .${checkClasse}`);
+
+            if (!barra || !texto || checkboxes.length === 0) return;
+
+            const total = checkboxes.length;
+            const marcados = document.querySelectorAll(`.${trilhaClasse} .${checkClasse}:checked`).length;
+            const porcentagem = total > 0 ? Math.round((marcados / total) * 100) : 0;
+
+            barra.style.width = porcentagem + '%';
+            texto.innerText = porcentagem + '%';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // CONFIG DAS TRILHAS
+            const trilhas = [
+                { trilha: 'tecnica', check: 'check-item-tec', barra: 'barra-progresso-tec', texto: 'progresso-texto-tec' },
+                { trilha: 'soft-skills', check: 'check-item-soft', barra: 'barra-progresso-soft', texto: 'progresso-texto-soft' }
+            ];
+
+            trilhas.forEach(t => {
+                // 1. Inicializa a barra ao carregar
+                atualizarProgresso(t.trilha, t.check, t.barra, t.texto);
+
+                // 2. Adiciona listener SÓ nos checks dessa trilha
+                document.querySelectorAll(`.${t.trilha} .${t.check}`).forEach(checkbox => {
+                    checkbox.addEventListener('change', () => {
+                        atualizarProgresso(t.trilha, t.check, t.barra, t.texto); // atualiza só ela
+                    });
+                });
+            });
+
+        });
+    </script>
 
 
 </body>
+
 
 </html>
