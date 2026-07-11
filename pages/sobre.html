@@ -4,39 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
     <link rel="stylesheet" href="../css/sobre.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Sobre | Trilhando</title>
+    <title>Sobre</title>
 </head>
 
 <body>
-    <!-- ==================== CABEÇALHO ==================== -->
+
+    <!-- Cabeçalho -->
 
     <nav>
         <ul>
             <li><img class="logo" src="../assets/Images/Icon.png"></li>
-            <li><a href="inicio.html">Início</a></li>
+            <li><a href="menu.html">Início</a></li>
             <li><a href="trilhas.html">Trilhas de Carreira</a></li>
             <li><a href="oportunidades.html">Oportunidades</a></li>
-            <li><a href="sobre.html" class="ativo">Sobre</a></li>
-            <li><img class="imgAcessibilidade" src="../assets/icons/acessibilidade.svg"><a href="#">Acessibilidade</a></li>
+            <li><a class="ativo" href="#">Sobre</a></li>
+            <li><img class="imgAcessibilidade" src="../assets/Images/acessibilidade.svg"><a href="#">Acessibilidade</a>
+            </li>
         </ul>
     </nav>
 
-    <!-- ==================== CONTEÚDO ==================== -->
-
     <main>
 
-        <p class="breadcrumb">
-            <a href="inicio.html">início</a> &gt; Sobre
-        </p>
+        <!-- BREADCRUMB -->
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+            <ol>
+                <li>
+                    <svg class="breadcrumb-icon-home" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                    </svg>
+                    <a href="menu.html">Início</a>
+                    <svg class="breadcrumb-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                    </svg>
+                </li>
+                <li aria-current="page">Sobre</li>
+            </ol>
+        </nav>
 
-        <!-- Hero -->
-        <section class="heroSobre">
+        <!-- HERO -->
+        <section class="hero-sobre">
 
-            <div class="heroSobreTexto">
+            <div class="hero-sobre-texto">
                 <h1>Sobre&nbsp; o Trilhando</h1>
                 <p>
                     O Trilhando nasceu para ser um guia acessível e prático na jornada de
@@ -45,7 +57,7 @@
                 </p>
             </div>
 
-            <div class="heroSobreImagem">
+            <div class="hero-sobre-imagem">
                 <svg viewBox="0 0 600 380" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
                     <defs>
                         <radialGradient id="skyGlow" cx="50%" cy="15%" r="70%">
@@ -79,31 +91,30 @@
 
         </section>
 
-        <!-- Missão / Visão / Propósito / Valores -->
+        <!-- MISSÃO / VISÃO / PROPÓSITO / VALORES -->
         <section class="pilares">
+            <div class="cards-pilares">
 
-            <div class="cardsPilares">
-
-                <article class="cardPilar">
-                    <span class="icone"><i class="bi bi-flag"></i></span>
+                <article class="card-pilar">
+                    <span class="icone"><span class="iconify" data-icon="mdi:flag-outline"></span></span>
                     <h3>Missão</h3>
                     <p>Democratizar o acesso à tecnologia com trilhas gratuitas que conectam pessoas ao mercado de trabalho.</p>
                 </article>
 
-                <article class="cardPilar">
-                    <span class="icone"><i class="bi bi-lightbulb"></i></span>
+                <article class="card-pilar">
+                    <span class="icone"><span class="iconify" data-icon="mdi:lightbulb-outline"></span></span>
                     <h3>Visão</h3>
                     <p>Ser referência em educação inclusiva, impulsionando talentos e transformando vidas através da tecnologia.</p>
                 </article>
 
-                <article class="cardPilar">
-                    <span class="icone"><i class="bi bi-heart"></i></span>
+                <article class="card-pilar">
+                    <span class="icone"><span class="iconify" data-icon="mdi:heart-outline"></span></span>
                     <h3>Propósito</h3>
                     <p>Abrir portas e mudar histórias através da tecnologia, caminhando junto com você em toda a jornada.</p>
                 </article>
 
-                <article class="cardPilar">
-                    <span class="icone"><i class="bi bi-chat-dots"></i></span>
+                <article class="card-pilar">
+                    <span class="icone"><span class="iconify" data-icon="mdi:chat-outline"></span></span>
                     <h3>Valores</h3>
                     <ul>
                         <li>Acessibilidade</li>
@@ -115,130 +126,129 @@
                 </article>
 
             </div>
-
         </section>
 
-        <!-- Nossa Equipe -->
+        <!-- NOSSA EQUIPE -->
         <section class="equipe">
 
             <h2>Nossa Equipe</h2>
             <p class="subtitulo">Somos pessoas apaixonadas por educação, tecnologia e impacto social.</p>
 
-            <div class="cardsEquipe">
+            <div class="cards-equipe">
 
-                <article class="cardEquipe">
+                <article class="card-equipe">
                     <div class="avatar">VM</div>
                     <h4>Vitória Manuela</h4>
                     <span class="funcao">Design &amp; UI/UX</span>
-                    <a class="linkedin" href="#"><i class="bi bi-linkedin"></i></a>
+                    <a class="linkedin" href="#"><span class="iconify" data-icon="mdi:linkedin"></span></a>
                 </article>
 
-                <article class="cardEquipe">
+                <article class="card-equipe">
                     <div class="avatar">GM</div>
                     <h4>Guilherme Michael</h4>
                     <span class="funcao">Product Owner / Documentação</span>
-                    <a class="linkedin" href="#"><i class="bi bi-linkedin"></i></a>
+                    <a class="linkedin" href="#"><span class="iconify" data-icon="mdi:linkedin"></span></a>
                 </article>
 
-                <article class="cardEquipe">
+                <article class="card-equipe">
                     <div class="avatar">GR</div>
                     <h4>Geovana Ramos</h4>
                     <span class="funcao">Dev Front-end</span>
-                    <a class="linkedin" href="#"><i class="bi bi-linkedin"></i></a>
+                    <a class="linkedin" href="#"><span class="iconify" data-icon="mdi:linkedin"></span></a>
                 </article>
 
-                <article class="cardEquipe">
+                <article class="card-equipe">
                     <div class="avatar">LL</div>
                     <h4>Larissa Lopes</h4>
                     <span class="funcao">Dev Front-end</span>
-                    <a class="linkedin" href="#"><i class="bi bi-linkedin"></i></a>
+                    <a class="linkedin" href="#"><span class="iconify" data-icon="mdi:linkedin"></span></a>
                 </article>
 
-                <article class="cardEquipe">
+                <article class="card-equipe">
                     <div class="avatar">ME</div>
                     <h4>Maria Eduarda</h4>
-                    <span class="funcao">&nbsp;</span>
-                    <a class="linkedin" href="#"><i class="bi bi-linkedin"></i></a>
+                    <span class="funcao">Dev Front-end</span>
+                    <a class="linkedin" href="#"><span class="iconify" data-icon="mdi:linkedin"></span></a>
                 </article>
 
-                <article class="cardEquipe">
+                <article class="card-equipe">
                     <div class="avatar">MR</div>
                     <h4>Micaela Ridrigues</h4>
                     <span class="funcao">Design &amp; UI/UX</span>
-                    <a class="linkedin" href="#"><i class="bi bi-linkedin"></i></a>
+                    <a class="linkedin" href="#"><span class="iconify" data-icon="mdi:linkedin"></span></a>
                 </article>
 
-                <article class="cardEquipe">
+                <article class="card-equipe">
                     <div class="avatar">DO</div>
                     <h4>David Oliveira</h4>
                     <span class="funcao">Facilitador/Líder/Scrum Master</span>
-                    <a class="linkedin" href="#"><i class="bi bi-linkedin"></i></a>
+                    <a class="linkedin" href="#"><span class="iconify" data-icon="mdi:linkedin"></span></a>
                 </article>
 
             </div>
 
         </section>
 
-        <!-- Mentoria -->
+        <!-- MENTORIA -->
         <section class="mentoria">
 
-            <div class="mentoriaEsquerda">
-                <div class="fotoMentor">🧔</div>
+            <div class="mentoria-esquerda">
+                <div class="foto-mentor">🧔</div>
                 <div>
                     <h3>Mentoria com o Bigode</h3>
                     <p>Agende em breve uma mentoria exclusiva com o Bigode.</p>
                 </div>
             </div>
 
-            <div class="mentoriaDireita">
+            <div class="mentoria-direita">
                 <div>
-                    <h3>Fala com a gente</h3>
+                    <h3>Fale com a gente</h3>
                     <p>Deixe seu e-mail e seja avisado quando a mentoria estiver disponível.</p>
                 </div>
-                <a href="#" class="btnOutline">Quero ser avisado!</a>
+                <a href="#" class="btn-outline">Quero ser avisado!</a>
             </div>
 
         </section>
 
-        <!-- Parceiros -->
+        <!-- PARCEIROS -->
         <section class="parceiros">
 
             <h2>Nossos parceiros</h2>
             <p class="subtitulo">Instituições e iniciativas que apoiam nossa missão e acreditam no poder da educação.</p>
 
-            <div class="cardsParceiros">
+            <div class="cards-parceiros">
 
-                <article class="cardParceiro">
-                    <div class="logoParceiro serasa">
+                <article class="card-parceiro">
+                    <div class="logo-parceiro serasa">
                         <span>serasa experian</span>
                     </div>
-                    <div class="parceiroInfo">
+                    <div class="parceiro-info">
                         <h3>Serasa Experian</h3>
                         <p>Líder mundial em análise de dados, apoiando a capacitação técnica, inclusão financeira e empregabilidade.</p>
                     </div>
-                    <a href="#" class="btnVerde">Visitar site <i class="bi bi-arrow-right"></i></a>
+                    <a href="#" class="btn-verde">Visitar site <span class="iconify" data-icon="mdi:arrow-right"></span></a>
                 </article>
 
-                <article class="cardParceiro">
-                    <div class="logoParceiro proa">
+                <article class="card-parceiro">
+                    <div class="logo-parceiro proa">
                         <span>PROA</span>
                     </div>
-                    <div class="parceiroInfo">
+                    <div class="parceiro-info">
                         <h3>PROA</h3>
                         <p>Plataforma focada em criar oportunidades de carreira e impulsionar o futuro de jovens talentos na tecnologia.</p>
                     </div>
-                    <a href="#" class="btnVerde">Visitar site <i class="bi bi-arrow-right"></i></a>
+                    <a href="#" class="btn-verde">Visitar site <span class="iconify" data-icon="mdi:arrow-right"></span></a>
                 </article>
 
-                <article class="cardParceiro">
-                    <div class="logoParceiro interliga">
+                <article class="card-parceiro">
+                    <div class="logo-parceiro interliga">
                         <span>🦉 INTERLIGA</span>
                     </div>
-                    <div class="parceiroInfo">
+                    <div class="parceiro-info">
                         <h3>INTERLIGA</h3>
                         <p>Conectando jovens ao ensino superior e criando pontes sólidas com o mercado corporativo.</p>
                     </div>
-                    <a href="#" class="btnVerde">Visitar site <i class="bi bi-arrow-right"></i></a>
+                    <a href="#" class="btn-verde">Visitar site <span class="iconify" data-icon="mdi:arrow-right"></span></a>
                 </article>
 
             </div>
@@ -246,98 +256,70 @@
         </section>
 
         <!-- CTA -->
-        <section class="ctaContato">
-            <div class="ctaEsquerda">
-                <span class="ctaIcone"><i class="bi bi-send"></i></span>
+        <section class="cta-contato">
+            <div class="cta-esquerda">
+                <span class="cta-icone"><span class="iconify" data-icon="mdi:send-outline"></span></span>
                 <div>
                     <h3>Vamos Juntos nessa jornada?</h3>
                     <p>Entre em contato, tire dúvidas ou compartilhe sugestões.</p>
                 </div>
             </div>
-            <a href="#" class="btnVerde">Fale conosco! <i class="bi bi-arrow-right"></i></a>
+            <a href="#" class="btn-verde">Fale conosco! <span class="iconify" data-icon="mdi:arrow-right"></span></a>
         </section>
 
     </main>
 
-    <!-- ==================== RODAPÉ ==================== -->
-    <footer class="footer">
-
-        <div class="footerContainer">
-
-            <div class="footerLogo">
-
-                <img class="logo" src="../assets/Images/Icon.png" alt="Logo">
-
-                <p>
-                    Seu caminho para um futuro melhor.
-                </p>
-
-                <div class="footerLinks">
+    <!-- FOOTER -->
+    <footer class="footer-trilhas">
+        <div class="container-footer">
+            <div class="footer-col footer-logo">
+                <img src="../assets/Images/Icon.png" alt="Logo">
+                <p>Seu caminho para um futuro melhor.</p>
+                <div class="footer-links-pequenos">
                     <a href="#">Privacidade</a>
                     <a href="#">Termos de Uso</a>
                 </div>
-
             </div>
 
-            <div class="footerCol">
-
-                <h3>Navegação</h3>
-
-                <ul>
-                    <li><a href="../index.html">Início</a></li>
-                    <li><a href="trilhas.html">Trilhas de Carreira</a></li>
-                    <li><a href="oportunidades.html">Oportunidades</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                </ul>
-
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <a href="menu.html">Início</a>
+                <a href="trilhas.html">Trilhas de Carreira</a>
+                <a href="oportunidades.html">Oportunidades</a>
+                <a href="sobre.html">Sobre</a>
             </div>
 
-            <div class="footerCol">
-
-                <h3>Recursos</h3>
-
-                <ul>
-                    <li><a href="#">Como funciona</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Dicas de Carreira</a></li>
-                    <li><a href="#">Conteúdos</a></li>
-                </ul>
-
+            <div class="footer-col">
+                <h4>Recursos</h4>
+                <a href="#">Como funciona</a>
+                <a href="#">FAQ</a>
+                <a href="#">Dicas de Carreira</a>
+                <a href="#">Comunidade</a>
             </div>
 
-            <div class="footerCol">
-
-                <h3>Contato</h3>
-
-                <p>team.trilhando@gmail.com</p>
-
-                <div class="redes">
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-linkedin"></i>
-                    <i class="bi bi-youtube"></i>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <a href="mailto:contato@trilhando.com">contato@trilhando.com</a>
+                <div class="footer-social">
+                    <a href="#">IG</a>
+                    <a href="#">IN</a>
+                    <a href="#">YT</a>
                 </div>
-
             </div>
 
-            <div class="footerCol">
-
-                <h3>Acessibilidade</h3>
-
-                <p>A+ &nbsp;&nbsp; A-</p>
-
-                <button class="vlibras">
-                    VLibras
-                </button>
-
+            <div class="footer-col">
+                <h4>Acessibilidade</h4>
+                <div class="footer-acessibilidade">
+                    <button>A+ A- A</button>
+                </div>
+                <button class="btn-alto-contraste">Alto Contraste</button>
             </div>
 
         </div>
-
+        <div class="footer-copy">
+            <p>© 2026 Trilhando. Todos os direitos reservados.</p>
+        </div>
     </footer>
-
-    <div class="copyright">
-        © 2026 Trilhando. Todos os direitos reservados.
-    </div>
 
 </body>
 </html>
