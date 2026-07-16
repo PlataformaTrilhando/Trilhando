@@ -1,11 +1,325 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+    <link rel="stylesheet" href="../css/sobre.css">
     <title>Sobre</title>
 </head>
+
 <body>
-    <h1>Página de Infos</h1>
+
+    <!-- Cabeçalho -->
+
+    <nav>
+        <ul>
+            <li><img class="logo" src="../assets/Images/Icon.png"></li>
+            <li><a href="menu.html">Início</a></li>
+            <li><a href="trilhas.html">Trilhas de Carreira</a></li>
+            <li><a href="oportunidades.html">Oportunidades</a></li>
+            <li><a class="ativo" href="#">Sobre</a></li>
+            <li><img class="imgAcessibilidade" src="../assets/Images/acessibilidade.svg"><a href="#">Acessibilidade</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- BREADCRUMB -->
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+            <ol>
+                <li>
+                    <svg class="breadcrumb-icon-home" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                    </svg>
+                    <a href="menu.html">Início</a>
+                    <svg class="breadcrumb-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                    </svg>
+                </li>
+                <li aria-current="page">Sobre</li>
+            </ol>
+        </nav>
+
+        <!-- HERO -->
+        <section class="hero-sobre">
+
+            <div class="hero-sobre-texto">
+                <h1>Sobre&nbsp; o Trilhando</h1>
+                <p>
+                    O Trilhando nasceu para ser um guia acessível e prático na jornada de
+                    quem quer aprender tecnologia, conquistar oportunidades e construir um
+                    futuro melhor.
+                </p>
+            </div>
+
+            <div class="hero-sobre-imagem">
+                <svg viewBox="0 0 600 380" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                    <defs>
+                        <radialGradient id="skyGlow" cx="50%" cy="15%" r="70%">
+                            <stop offset="0%" stop-color="#3a2166" />
+                            <stop offset="100%" stop-color="#0c0a16" />
+                        </radialGradient>
+                        <linearGradient id="mtn1" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#4a3a63" />
+                            <stop offset="100%" stop-color="#241d33" />
+                        </linearGradient>
+                    </defs>
+                    <rect width="600" height="380" fill="url(#skyGlow)" />
+                    <g fill="#fff" opacity="0.6">
+                        <circle cx="60" cy="40" r="1.5" /><circle cx="120" cy="70" r="1" />
+                        <circle cx="500" cy="50" r="1.5" /><circle cx="440" cy="90" r="1" />
+                        <circle cx="300" cy="30" r="1.2" /><circle cx="200" cy="60" r="1" />
+                        <circle cx="540" cy="120" r="1" />
+                    </g>
+                    <ellipse cx="90" cy="280" rx="120" ry="40" fill="#1a1425" opacity="0.8" />
+                    <ellipse cx="480" cy="300" rx="140" ry="45" fill="#1a1425" opacity="0.8" />
+                    <ellipse cx="300" cy="320" rx="200" ry="35" fill="#150f1f" opacity="0.9" />
+                    <polygon points="300,90 380,260 220,260" fill="url(#mtn1)" />
+                    <polygon points="300,90 340,260 260,260" fill="#342a49" />
+                    <line x1="300" y1="90" x2="300" y2="55" stroke="#cfcfcf" stroke-width="2" />
+                    <path d="M300 55 L332 63 L300 71 Z" fill="#1ee89a" />
+                    <path d="M180 340 C 220 300, 260 300, 280 260 S 330 190, 300 150 S 340 110, 300 90"
+                        fill="none" stroke="#c084fc" stroke-width="4" stroke-dasharray="10 8" opacity="0.8" />
+                    <text x="300" y="130" text-anchor="middle" fill="#e5e2ea" font-size="13" opacity="0.85">Conquista Alcançada</text>
+                </svg>
+            </div>
+
+        </section>
+
+        <!-- MISSÃO / VISÃO / PROPÓSITO / VALORES -->
+        <section class="pilares">
+            <div class="cards-pilares">
+
+                <article class="card-pilar">
+                    <span class="icone"><span class="iconify" data-icon="mdi:flag-outline"></span></span>
+                    <h3>Missão</h3>
+                    <p>Democratizar o acesso à tecnologia com trilhas gratuitas que conectam pessoas ao mercado de trabalho.</p>
+                </article>
+
+                <article class="card-pilar">
+                    <span class="icone"><span class="iconify" data-icon="mdi:lightbulb-outline"></span></span>
+                    <h3>Visão</h3>
+                    <p>Ser referência em educação inclusiva, impulsionando talentos e transformando vidas através da tecnologia.</p>
+                </article>
+
+                <article class="card-pilar">
+                    <span class="icone"><span class="iconify" data-icon="mdi:heart-outline"></span></span>
+                    <h3>Propósito</h3>
+                    <p>Abrir portas e mudar histórias através da tecnologia, caminhando junto com você em toda a jornada.</p>
+                </article>
+
+                <article class="card-pilar">
+                    <span class="icone"><span class="iconify" data-icon="mdi:chat-outline"></span></span>
+                    <h3>Valores</h3>
+                    <ul>
+                        <li>Acessibilidade</li>
+                        <li>Inclusão</li>
+                        <li>Aprendizado contínuo</li>
+                        <li>Colaboração</li>
+                        <li>Impacto positivo</li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- NOSSA EQUIPE -->
+        <section class="equipe">
+
+            <h2>Nossa Equipe</h2>
+            <p class="subtitulo">Somos pessoas apaixonadas por educação, tecnologia e impacto social.</p>
+
+            <div class="cards-equipe">
+
+                <article class="card-equipe">
+                    <div class="avatar">VM</div>
+                    <h4>Vitória Manuela</h4>
+                    <span class="funcao">Design &amp; UI/UX</span>
+                    <a class="linkedin" href="#"><span class="iconify" data-icon="mdi:linkedin"></span></a>
+                </article>
+
+                <article class="card-equipe">
+                    <div class="avatar">GM</div>
+                    <h4>Guilherme Michael</h4>
+                    <span class="funcao">Product Owner / Documentação</span>
+                    <a class="linkedin" href="#"><span class="iconify" data-icon="mdi:linkedin"></span></a>
+                </article>
+
+                <article class="card-equipe">
+                    <div class="avatar">GR</div>
+                    <h4>Geovana Ramos</h4>
+                    <span class="funcao">Dev Front-end</span>
+                    <a class="linkedin" href="#"><span class="iconify" data-icon="mdi:linkedin"></span></a>
+                </article>
+
+                <article class="card-equipe">
+                    <div class="avatar">LL</div>
+                    <h4>Larissa Lopes</h4>
+                    <span class="funcao">Dev Front-end</span>
+                    <a class="linkedin" href="#"><span class="iconify" data-icon="mdi:linkedin"></span></a>
+                </article>
+
+                <article class="card-equipe">
+                    <div class="avatar">ME</div>
+                    <h4>Maria Eduarda</h4>
+                    <span class="funcao">Dev Front-end</span>
+                    <a class="linkedin" href="#"><span class="iconify" data-icon="mdi:linkedin"></span></a>
+                </article>
+
+                <article class="card-equipe">
+                    <div class="avatar">MR</div>
+                    <h4>Micaela Ridrigues</h4>
+                    <span class="funcao">Design &amp; UI/UX</span>
+                    <a class="linkedin" href="#"><span class="iconify" data-icon="mdi:linkedin"></span></a>
+                </article>
+
+                <article class="card-equipe">
+                    <div class="avatar">DO</div>
+                    <h4>David Oliveira</h4>
+                    <span class="funcao">Facilitador/Líder/Scrum Master</span>
+                    <a class="linkedin" href="#"><span class="iconify" data-icon="mdi:linkedin"></span></a>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- MENTORIA -->
+        <section class="mentoria">
+
+            <div class="mentoria-esquerda">
+                <div class="foto-mentor">🧔</div>
+                <div>
+                    <h3>Mentoria com o Bigode</h3>
+                    <p>Agende em breve uma mentoria exclusiva com o Bigode.</p>
+                </div>
+            </div>
+
+            <div class="mentoria-direita">
+                <div>
+                    <h3>Fale com a gente</h3>
+                    <p>Deixe seu e-mail e seja avisado quando a mentoria estiver disponível.</p>
+                </div>
+                <a href="#" class="btn-outline">Quero ser avisado!</a>
+            </div>
+
+        </section>
+
+        <!-- PARCEIROS -->
+        <section class="parceiros">
+
+            <h2>Nossos parceiros</h2>
+            <p class="subtitulo">Instituições e iniciativas que apoiam nossa missão e acreditam no poder da educação.</p>
+
+            <div class="cards-parceiros">
+
+                <article class="card-parceiro">
+                    <div class="logo-parceiro serasa">
+                        <span>serasa experian</span>
+                    </div>
+                    <div class="parceiro-info">
+                        <h3>Serasa Experian</h3>
+                        <p>Líder mundial em análise de dados, apoiando a capacitação técnica, inclusão financeira e empregabilidade.</p>
+                    </div>
+                    <a href="#" class="btn-verde">Visitar site <span class="iconify" data-icon="mdi:arrow-right"></span></a>
+                </article>
+
+                <article class="card-parceiro">
+                    <div class="logo-parceiro proa">
+                        <span>PROA</span>
+                    </div>
+                    <div class="parceiro-info">
+                        <h3>PROA</h3>
+                        <p>Plataforma focada em criar oportunidades de carreira e impulsionar o futuro de jovens talentos na tecnologia.</p>
+                    </div>
+                    <a href="#" class="btn-verde">Visitar site <span class="iconify" data-icon="mdi:arrow-right"></span></a>
+                </article>
+
+                <article class="card-parceiro">
+                    <div class="logo-parceiro interliga">
+                        <span>🦉 INTERLIGA</span>
+                    </div>
+                    <div class="parceiro-info">
+                        <h3>INTERLIGA</h3>
+                        <p>Conectando jovens ao ensino superior e criando pontes sólidas com o mercado corporativo.</p>
+                    </div>
+                    <a href="#" class="btn-verde">Visitar site <span class="iconify" data-icon="mdi:arrow-right"></span></a>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-contato">
+            <div class="cta-esquerda">
+                <span class="cta-icone"><span class="iconify" data-icon="mdi:send-outline"></span></span>
+                <div>
+                    <h3>Vamos Juntos nessa jornada?</h3>
+                    <p>Entre em contato, tire dúvidas ou compartilhe sugestões.</p>
+                </div>
+            </div>
+            <a href="#" class="btn-verde">Fale conosco! <span class="iconify" data-icon="mdi:arrow-right"></span></a>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-trilhas">
+        <div class="container-footer">
+            <div class="footer-col footer-logo">
+                <img src="../assets/Images/Icon.png" alt="Logo">
+                <p>Seu caminho para um futuro melhor.</p>
+                <div class="footer-links-pequenos">
+                    <a href="#">Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <a href="menu.html">Início</a>
+                <a href="trilhas.html">Trilhas de Carreira</a>
+                <a href="oportunidades.html">Oportunidades</a>
+                <a href="sobre.html">Sobre</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Recursos</h4>
+                <a href="#">Como funciona</a>
+                <a href="#">FAQ</a>
+                <a href="#">Dicas de Carreira</a>
+                <a href="#">Comunidade</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <a href="mailto:contato@trilhando.com">contato@trilhando.com</a>
+                <div class="footer-social">
+                    <a href="#">IG</a>
+                    <a href="#">IN</a>
+                    <a href="#">YT</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Acessibilidade</h4>
+                <div class="footer-acessibilidade">
+                    <button>A+ A- A</button>
+                </div>
+                <button class="btn-alto-contraste">Alto Contraste</button>
+            </div>
+
+        </div>
+        <div class="footer-copy">
+            <p>© 2026 Trilhando. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
