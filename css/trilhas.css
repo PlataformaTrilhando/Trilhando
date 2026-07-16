@@ -66,8 +66,7 @@ nav ul li a:hover {
 
 nav ul li a.ativo {
     color: #CD97EB;
-    /* hover roxo claro */
-    border-bottom: 2px solid #CD97EB;
+    /* border-bottom: 2px solid #CD97EB; */
     padding-bottom: 2px;
     pointer-events: none;
     cursor: default;
@@ -439,28 +438,21 @@ nav ul li a.ativo:hover {
     height: 40px;
     flex-shrink: 0;
     display: block;
-    /* tira aquele espaço chato debaixo da img */
 }
 
 /* SEÇÃO TRILHA DETALHADA */
 .trilha-detalhada {
-    padding: 60px 0;
-    background: #06040D;
-    color: white;
-}
-
-.trilha-conteudo {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    padding: 40px 70px;
 }
 
 .trilha-conteudo h2 {
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 30px;
+    border-left: 6px solid #8F3EF7;
+    padding-left: 15px;
 }
 
-/* SCROLL INTERNO - MANTIDO IGUAL */
+/* SCROLL INTERNO*/
 .trilha-scroll {
     max-height: 600px;
     overflow-y: auto;
@@ -476,7 +468,7 @@ nav ul li a.ativo:hover {
     border-radius: 10px;
 }
 
-/* ITEM DA TRILHA - MANTIDO IGUAL */
+/* ITEM DA TRILHA */
 .item-trilha {
     display: flex;
     gap: 20px;
@@ -489,13 +481,12 @@ nav ul li a.ativo:hover {
     align-items: center;
 }
 
-/* BOLINHA - ALTERADO */
+/* BOLINHA */
 .bolinha {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background: #2a2f55;
-    /* padrão */
     border: 2px solid #2a2f55;
     color: #FFFFFF;
     font-weight: bold;
@@ -505,16 +496,15 @@ nav ul li a.ativo:hover {
     z-index: 2;
 }
 
-/* LINHA - ALTERADO */
+/* LINHA */
 .linha {
     width: 3px;
     flex: 1;
     background: #2a2f55;
-    /* padrão */
     margin-top: 5px;
 }
 
-/* CARD DO ITEM - MANTIDO IGUAL */
+/* CARD DO ITEM */
 .card-item {
     flex: 1;
     background: #1e2340;
@@ -557,7 +547,7 @@ nav ul li a.ativo:hover {
     color: #aaa;
 }
 
-/* TAGS - ALTERADO CORES PRA BATER COM FIGMA */
+/* TAGS */
 .tag {
     font-size: 10px;
     padding: 4px 10px;
@@ -582,41 +572,63 @@ nav ul li a.ativo:hover {
     color: #8E8E93;
 }
 
+/* CARD RECURSOS */
+
 .card-recursos {
     flex: 2;
-}
-
-.card-recursos p {
-    margin: 0 0 8px 0;
-    font-size: 12px;
-    color: #aaa;
+    margin: 0 20px;
+    min-width: 300px;
 }
 
 .recursos-icons {
     display: flex;
-    gap: 12px;
-    font-size: 11px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 15px;
+    margin-top: 8px;
+    justify-content: flex-start;
 }
 
-.btn-detalhes {
-    background: transparent;
-    border: 1px solid #00ff88;
-    color: #00ff88;
-    padding: 10px 18px;
+.recurso-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #B8B5FF;
+}
+
+.recurso-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.recurso-item span {
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.recurso-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-detalhes,
+.btn-cta {
+    background: #8F3EF7;
+    color: white;
+    padding: 10px 25px;
     border-radius: 8px;
     cursor: pointer;
-    white-space: nowrap;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.3s;
 }
 
-.btn-detalhes.disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-    border-color: #555;
-    color: #555;
+.btn-detalhes:hover {
+    background: #7C3AED;
+    transform: scale(1.05);
 }
 
-/* ===== NOVO: PINTAR BOLINHA E LINHA PELA TAG ===== */
+
+/* ===== PINTAR BOLINHA E LINHA PELA TAG ===== */
 .item-trilha:has(.tag.essencial) .bolinha,
 .item-trilha:has(.tag.essencial) .linha {
     background: #00842C;
@@ -635,7 +647,7 @@ nav ul li a.ativo:hover {
     border-color: #8E8E93;
 }
 
-/* ESTADO BLOQUEADO - ALTERADO */
+/* ESTADO BLOQUEADO */
 .item-trilha.bloqueado .bolinha,
 .item-trilha.bloqueado .linha {
     background: #2a2f55;
@@ -692,20 +704,79 @@ nav ul li a.ativo:hover {
 /* CORES ESPECIFICAS DA SOFT SKILLS */
 .soft-skills .item-trilha:has(.tag.essencial) .bolinha,
 .soft-skills .item-trilha:has(.tag.essencial) .linha {
-    background: #00ff88;
-    border-color: #00ff88;
+    background: #00842C;
+    border-color: #00842C;
 }
 
 .soft-skills .item-trilha:has(.tag.importante) .bolinha,
 .soft-skills .item-trilha:has(.tag.importante) .linha {
-    background: #7b61ff;
-    border-color: #7b61ff;
+    background: #722396;
+    border-color: #722396;
 }
 
 .soft-skills .item-trilha:has(.tag.complementar) .bolinha,
 .soft-skills .item-trilha:has(.tag.complementar) .linha {
     background: #8E8E93;
     border-color: #8E8E93;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: #150621;
+    margin: 10% auto;
+    padding: 40px;
+    border: 2px solid #8F3EF7;
+    width: 600px;
+    border-radius: 20px;
+    position: relative;
+    color: white;
+}
+
+.close-modal {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #B8B5FF;
+}
+
+.modal-section {
+    margin-top: 25px;
+}
+
+.modal-section h3 {
+    font-size: 18px;
+    color: #10B981;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-section p {
+    font-size: 16px;
+    color: #d6d6d6;
+    line-height: 1.5;
+}
+
+.modal-section.highlight {
+    background: rgba(143, 62, 247, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 4px solid #8F3EF7;
 }
 
 /* CARD CTA FINAL */
@@ -727,7 +798,7 @@ nav ul li a.ativo:hover {
 }
 
 .card-final .card-cta .cta-icon {
-    
+
     flex-shrink: 0;
     margin: 10px;
 }
@@ -954,6 +1025,11 @@ nav ul li a.ativo:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.footer-social img {
+    width: 32px;
+    height: 32px;
 }
 
 .footer-acessibilidade button {
