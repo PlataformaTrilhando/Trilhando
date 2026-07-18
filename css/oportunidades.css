@@ -471,6 +471,11 @@ nav ul li a.ativo {
     border: 1px solid #174232;
 }
 
+.card-final a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .btn-cta {
     width: 340px;
     height: 48px;

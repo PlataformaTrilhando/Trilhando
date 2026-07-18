@@ -54,11 +54,24 @@ li a {
     width: 20px;
 }
 
-/* Hover dos links (a corzinha roxa)*/
+/* Hover dos links */
 
 nav ul li a:hover {
     color: #CD97EB;
+    /* hover roxo claro */
     transition: color 0.3s;
+}
+
+nav ul li a.ativo {
+    color: #CD97EB;
+    /* border-bottom: 2px solid #CD97EB; */
+    padding-bottom: 2px;
+    pointer-events: none;
+    cursor: default;
+}
+
+nav ul li a.ativo:hover {
+    color: #CD97EB;
 }
 
 /* Fim da configuração navbar*/

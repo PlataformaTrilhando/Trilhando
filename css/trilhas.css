@@ -823,7 +823,10 @@ nav ul li a.ativo:hover {
     color: #fff;
     margin: 0;
 }
-
+.card-final a {
+    text-decoration: none;
+    color: inherit;
+}
 .card-final .btn-cta {
     background: linear-gradient(to right, #521f68 0%, #2c1435 100%);
     /* roxo do botão */
