@@ -416,7 +416,7 @@ nav ul li a:hover {
 
 /* Botão */
 
-.cardArea button {
+.cardArea .btn-ativo {
     width: fit-content;
 
     border: none;
@@ -432,6 +432,20 @@ nav ul li a:hover {
     cursor: pointer;
 
     transition: .35s;
+}
+
+.btn-inativo {
+    width: fit-content;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 18px;
+    background: #b8c9bf;
+    color: #184d3b;
+    font-size: 13px;
+    cursor: not-allowed !important;
+    transition: .35s;
+    opacity: 0.6;
+    pointer-events: auto;
 }
 
 /*=========================
@@ -490,6 +504,162 @@ nav ul li a:hover {
     }
 
 }
+
+/* Estilos para a Expansão do Card de Tecnologia */
+
+/* Container das áreas profissionais para permitir a expansão lateral */
+.cardsAreas {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* Garante que os outros cards não estiquem verticalmente */
+}
+
+/* Card base */
+.cardArea {
+    position: relative;
+    overflow: hidden;
+    /* Garante que o conteúdo oculto não vaze */
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Estado Expandido */
+.cardArea.destaque.expandido {
+    width: 550px;
+    /* Expande para a direita */
+    background: #184d3b;
+    cursor: default;
+}
+
+/* Ocultar conteúdo original quando expandido para dar foco às subáreas */
+.cardArea.expandido>.icone,
+.cardArea.expandido>h3,
+.cardArea.expandido>p,
+.cardArea.expandido>button:not(.btn-voltar) {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-20px);
+    transition: 0.3s;
+}
+
+/* Container de Subáreas */
+.sub-areas-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 22px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(30px);
+    transition: all 0.5s ease;
+}
+
+.cardArea.expandido .sub-areas-container {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+}
+
+.sub-areas-content h4 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.sub-areas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.sub-area-item {
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.sub-area-item.ativo {
+    background: #fff;
+    color: #184d3b;
+    border: 1px solid #fff;
+}
+
+.sub-area-item.ativo:hover {
+    background: #4fd699;
+    border-color: #4fd699;
+    color: #fff;
+}
+
+.sub-area-item.inativo {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.sub-area-item small {
+    font-size: 10px;
+    font-weight: 400;
+    display: block;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #4fd699;
+}
+
+.sub-area-item.inativo .dot {
+    background: #666;
+}
+
+.btn-voltar {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    width: fit-content;
+    transition: 0.3s;
+}
+
+.btn-voltar:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsividade para o card expandido */
+@media (max-width: 768px) {
+    .cardArea.destaque.expandido {
+        width: 100%;
+        max-width: 380px;
+        min-height: 350px;
+    }
+
+    .sub-areas-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 /*Fim das configurações da section Areas*/
 /*Configuração da Section Opotunidades*/
