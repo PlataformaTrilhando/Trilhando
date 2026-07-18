@@ -5,15 +5,16 @@
     box-sizing: border-box;
 }
 
-body{
+body {
 
-    margin:0;
+    margin: 0;
 
-    font-family:"Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 
-    background:#fff;
+    background: #fff;
 
 }
+
 /*Configuração Navbar*/
 nav {
     background-color: black;
@@ -52,16 +53,18 @@ li a {
     height: 20px;
     width: 20px;
 }
+
 /* Hover dos links (a corzinha roxa)*/
 
 nav ul li a:hover {
-    color: #9f5cff;
+    color: #CD97EB;
     transition: color 0.3s;
 }
+
 /* Fim da configuração navbar*/
 
 /* Configuração da section hero*/
-.hero{
+.hero {
 
     width: 100%;
     height: 700px;
@@ -72,25 +75,25 @@ nav ul li a:hover {
     padding-left: 70px;
 
     background-image:
-        linear-gradient(
-            90deg,
-            rgba(0,0,0,.95) 0%,
-            rgba(0,0,0,.78) 30%,
-            rgba(0,0,0,.18) 55%,
-            rgba(0,0,0,.05) 100%
-        ),
+        linear-gradient(90deg,
+            rgba(0, 0, 0, .95) 0%,
+            rgba(0, 0, 0, .78) 30%,
+            rgba(0, 0, 0, .18) 55%,
+            rgba(0, 0, 0, .05) 100%),
         url("../assets/Images/background.png");
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.hero-texto{
+
+.hero-texto {
 
     width: 500px;
 
 }
-.hero-texto h1{
+
+.hero-texto h1 {
 
     color: white;
 
@@ -103,12 +106,14 @@ nav ul li a:hover {
     margin-bottom: 35px;
 
 }
-.hero-texto span{
+
+.hero-texto span {
 
     color: #8F3EF7;
 
 }
-.hero-texto p{
+
+.hero-texto p {
 
     color: #d6d6d6;
 
@@ -121,7 +126,8 @@ nav ul li a:hover {
     width: 430px;
 
 }
-.btnHero{
+
+.btnHero {
 
     display: inline-flex;
 
@@ -147,25 +153,27 @@ nav ul li a:hover {
 
 }
 
-.btnHero:hover{
+.btnHero:hover {
 
     background: #7d29eb;
 
     transform: translateY(-3px);
 
 }
-.btnHero span{
+
+.btnHero span {
 
     color: white;
 
     font-size: 28px;
 
 }
+
 /* Fim da configuração da section hero*/
 
 /* Configuração da section Como funciona*/
 
-.comoFunciona{
+.comoFunciona {
     width: 100%;
     max-width: 1200px;
     margin: 80px auto;
@@ -173,7 +181,7 @@ nav ul li a:hover {
     background-color: #fff;
 }
 
-.comoFunciona h2{
+.comoFunciona h2 {
     text-align: center;
     font-size: 34px;
     font-weight: 700;
@@ -183,7 +191,7 @@ nav ul li a:hover {
 
 /* Cards */
 
-.cards{
+.cards {
     display: flex;
     justify-content: center;
     gap: 36px;
@@ -192,7 +200,7 @@ nav ul li a:hover {
 
 /* Card */
 
-.card{
+.card {
     position: relative;
 
     width: 320px;
@@ -209,13 +217,13 @@ nav ul li a:hover {
     transition: .25s;
 }
 
-.card:hover{
+.card:hover {
     transform: translateY(-4px);
 }
 
 /* Ícone */
 
-.card .icone{
+.card .icone {
     position: absolute;
     top: 16px;
     left: 16px;
@@ -238,7 +246,7 @@ nav ul li a:hover {
 
 /* Número */
 
-.card .numero{
+.card .numero {
 
     position: absolute;
 
@@ -264,7 +272,7 @@ nav ul li a:hover {
 
 /* Título */
 
-.card h3{
+.card h3 {
 
     margin-top: 26px;
     margin-bottom: 12px;
@@ -277,7 +285,7 @@ nav ul li a:hover {
 
 /* Texto */
 
-.card p{
+.card p {
 
     font-size: 16px;
 
@@ -290,42 +298,43 @@ nav ul li a:hover {
 
 /* Responsivo */
 
-@media(max-width:1000px){
+@media(max-width:1000px) {
 
-    .cards{
-        gap:20px;
+    .cards {
+        gap: 20px;
     }
 
-    .card{
-        width:300px;
+    .card {
+        width: 300px;
     }
 
 }
 
-@media(max-width:768px){
+@media(max-width:768px) {
 
-    .cards{
+    .cards {
         flex-direction: column;
         align-items: center;
     }
 
-    .card{
-        width:100%;
-        max-width:420px;
+    .card {
+        width: 100%;
+        max-width: 420px;
     }
 
 }
+
 /*Fim da configuração da section Como funciona*/
 
 /*Configuração da section areas*/
-.areas{
+.areas {
     width: 100%;
     max-width: 1200px;
     margin: 80px auto;
     padding: 0 20px;
 }
 
-.areas h2{
+.areas h2 {
     text-align: center;
     font-size: 34px;
     font-weight: 700;
@@ -333,7 +342,7 @@ nav ul li a:hover {
     margin-bottom: 40px;
 }
 
-.cardsAreas{
+.cardsAreas {
     display: flex;
     justify-content: center;
     gap: 18px;
@@ -342,7 +351,7 @@ nav ul li a:hover {
 
 /* Card */
 
-.cardArea{
+.cardArea {
     width: 260px;
     min-height: 190px;
     padding: 22px;
@@ -362,7 +371,7 @@ nav ul li a:hover {
 
 /* Ícone */
 
-.cardArea .icone{
+.cardArea .icone {
     width: 38px;
     height: 38px;
 
@@ -383,7 +392,7 @@ nav ul li a:hover {
 
 /* Título */
 
-.cardArea h3{
+.cardArea h3 {
     font-size: 24px;
     font-weight: 700;
     color: #111;
@@ -395,7 +404,7 @@ nav ul li a:hover {
 
 /* Texto */
 
-.cardArea p{
+.cardArea p {
     font-size: 14px;
     line-height: 1.6;
     color: #333;
@@ -407,7 +416,7 @@ nav ul li a:hover {
 
 /* Botão */
 
-.cardArea button{
+.cardArea button {
     width: fit-content;
 
     border: none;
@@ -429,29 +438,29 @@ nav ul li a:hover {
         HOVER
 =========================*/
 
-.cardArea:hover{
+.cardArea:hover {
 
     background: #184d3b;
 
     transform: translateY(-6px);
 
-    box-shadow: 0 12px 25px rgba(0,0,0,.18);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, .18);
 }
 
-.cardArea:hover h3{
+.cardArea:hover h3 {
     color: #fff;
 }
 
-.cardArea:hover p{
-    color: rgba(255,255,255,.9);
+.cardArea:hover p {
+    color: rgba(255, 255, 255, .9);
 }
 
-.cardArea:hover .icone{
-    background: rgba(255,255,255,.18);
+.cardArea:hover .icone {
+    background: rgba(255, 255, 255, .18);
     color: #fff;
 }
 
-.cardArea:hover button{
+.cardArea:hover button {
     background: #fff;
     color: #184d3b;
 }
@@ -460,45 +469,46 @@ nav ul li a:hover {
       RESPONSIVO
 =========================*/
 
-@media (max-width: 1100px){
+@media (max-width: 1100px) {
 
-    .cardsAreas{
+    .cardsAreas {
         justify-content: center;
     }
 
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-    .cardsAreas{
+    .cardsAreas {
         flex-direction: column;
         align-items: center;
     }
 
-    .cardArea{
+    .cardArea {
         width: 100%;
         max-width: 380px;
     }
 
 }
+
 /*Fim das configurações da section Areas*/
 /*Configuração da Section Opotunidades*/
 
-.oportunidades{
+.oportunidades {
     width: 100%;
     max-width: 1200px;
     margin: 80px auto;
     padding: 0 20px;
 }
 
-.oportunidades h2{
+.oportunidades h2 {
     text-align: center;
     font-size: 34px;
     font-weight: 700;
     margin-bottom: 40px;
 }
 
-.cardsOportunidades{
+.cardsOportunidades {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -507,7 +517,7 @@ nav ul li a:hover {
 
 /* Card */
 
-.cardOportunidade{
+.cardOportunidade {
 
     width: 330px;
     min-height: 210px;
@@ -524,18 +534,18 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-.cardOportunidade:hover{
+.cardOportunidade:hover {
 
     transform: translateY(-5px);
 
     border-color: #7d2bc9;
 
-    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
 }
 
 /* Tag superior */
 
-.tipo{
+.tipo {
 
     display: inline-block;
 
@@ -556,7 +566,7 @@ nav ul li a:hover {
 
 /* Título */
 
-.cardOportunidade h3{
+.cardOportunidade h3 {
 
     font-size: 24px;
 
@@ -567,7 +577,7 @@ nav ul li a:hover {
 
 /* Empresa */
 
-.empresa{
+.empresa {
 
     font-size: 14px;
 
@@ -580,7 +590,7 @@ nav ul li a:hover {
 
 /* Local */
 
-.local{
+.local {
 
     font-size: 14px;
 
@@ -591,7 +601,7 @@ nav ul li a:hover {
 
 /* Tecnologias */
 
-.tags{
+.tags {
 
     display: flex;
 
@@ -602,7 +612,7 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.tags span{
+.tags span {
 
     background: #ececec;
 
@@ -617,7 +627,7 @@ nav ul li a:hover {
 
 /* Link */
 
-.cardOportunidade a{
+.cardOportunidade a {
 
     text-decoration: none;
 
@@ -628,14 +638,14 @@ nav ul li a:hover {
     transition: .3s;
 }
 
-.cardOportunidade a:hover{
+.cardOportunidade a:hover {
 
     text-decoration: underline;
 }
 
 /* Botão inferior */
 
-.btnTodas{
+.btnTodas {
 
     display: block;
 
@@ -660,7 +670,7 @@ nav ul li a:hover {
     transition: .3s;
 }
 
-.btnTodas:hover{
+.btnTodas:hover {
 
     background: #7d2bc9;
 
@@ -671,26 +681,27 @@ nav ul li a:hover {
       RESPONSIVO
 =========================*/
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-    .cardsOportunidades{
+    .cardsOportunidades {
 
         flex-direction: column;
 
         align-items: center;
     }
 
-    .cardOportunidade{
+    .cardOportunidade {
 
         width: 100%;
         max-width: 400px;
     }
 
 }
+
 /*Fim da configuração Oportunidades*/
 
 /*Configuração da section Sobre*/
-.sobre{
+.sobre {
 
     max-width: 1200px;
     margin: 80px auto;
@@ -707,12 +718,12 @@ nav ul li a:hover {
 
 /* Imagem */
 
-.sobreImagem{
+.sobreImagem {
 
     flex: 1;
 }
 
-.sobreImagem img{
+.sobreImagem img {
 
     width: 100%;
     max-width: 430px;
@@ -727,14 +738,14 @@ nav ul li a:hover {
 
 /* Texto */
 
-.sobreTexto{
+.sobreTexto {
 
     flex: 1.4;
 
     color: #fff;
 }
 
-.sobreTexto h2{
+.sobreTexto h2 {
 
     font-size: 38px;
 
@@ -743,7 +754,7 @@ nav ul li a:hover {
     font-weight: 700;
 }
 
-.sobreTexto p{
+.sobreTexto p {
 
     font-size: 18px;
 
@@ -756,7 +767,7 @@ nav ul li a:hover {
 
 /* Ícones */
 
-.sobreInfo{
+.sobreInfo {
 
     display: flex;
 
@@ -765,7 +776,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-.info{
+.info {
 
     display: flex;
 
@@ -774,7 +785,7 @@ nav ul li a:hover {
     gap: 12px;
 }
 
-.info i{
+.info i {
 
     width: 42px;
     height: 42px;
@@ -792,7 +803,7 @@ nav ul li a:hover {
     font-size: 20px;
 }
 
-.info span{
+.info span {
 
     color: #fff;
 
@@ -807,55 +818,56 @@ nav ul li a:hover {
       RESPONSIVO
 =========================*/
 
-@media(max-width:900px){
+@media(max-width:900px) {
 
-    .sobre{
+    .sobre {
 
         flex-direction: column;
 
         text-align: center;
     }
 
-    .sobreImagem img{
+    .sobreImagem img {
 
         max-width: 100%;
         height: auto;
     }
 
-    .sobreInfo{
+    .sobreInfo {
 
         justify-content: center;
     }
 
 }
 
-@media(max-width:600px){
+@media(max-width:600px) {
 
-    .sobre{
+    .sobre {
 
         padding: 25px;
     }
 
-    .sobreTexto h2{
+    .sobreTexto h2 {
 
         font-size: 30px;
     }
 
-    .sobreTexto p{
+    .sobreTexto p {
 
         font-size: 16px;
     }
 
-    .sobreInfo{
+    .sobreInfo {
 
         flex-direction: column;
         align-items: center;
     }
 
 }
+
 /*Configuração da section footer*/
 
-.footer{
+.footer {
 
     width: 100%;
 
@@ -867,12 +879,12 @@ nav ul li a:hover {
 
     padding: 40px 0;
 
-    border-top: 1px solid rgba(255,255,255,.08);
+    border-top: 1px solid rgba(255, 255, 255, .08);
 }
 
 /* Container */
 
-.footerContainer{
+.footerContainer {
 
     max-width: 1200px;
 
@@ -891,19 +903,19 @@ nav ul li a:hover {
 
 /* Logo */
 
-.footerLogo{
+.footerLogo {
 
     width: 260px;
 }
 
-.logo{
+.logo {
 
     width: 70px;
 
     margin-bottom: 20px;
 }
 
-.footerLogo p{
+.footerLogo p {
 
     font-size: 14px;
 
@@ -914,14 +926,14 @@ nav ul li a:hover {
     margin-bottom: 25px;
 }
 
-.footerLinks{
+.footerLinks {
 
     display: flex;
 
     gap: 20px;
 }
 
-.footerLinks a{
+.footerLinks a {
 
     color: #fff;
 
@@ -930,31 +942,31 @@ nav ul li a:hover {
     font-size: 13px;
 }
 
-.footerLinks a:hover{
+.footerLinks a:hover {
 
     color: #9f5cff;
 }
 
 /* Colunas */
 
-.footerCol h3{
+.footerCol h3 {
 
     font-size: 16px;
 
     margin-bottom: 18px;
 }
 
-.footerCol ul{
+.footerCol ul {
 
     list-style: none;
 }
 
-.footerCol ul li{
+.footerCol ul li {
 
     margin-bottom: 12px;
 }
 
-.footerCol a{
+.footerCol a {
 
     color: #d6d6d6;
 
@@ -965,12 +977,12 @@ nav ul li a:hover {
     transition: .3s;
 }
 
-.footerCol a:hover{
+.footerCol a:hover {
 
     color: #9f5cff;
 }
 
-.footerCol p{
+.footerCol p {
 
     color: #d6d6d6;
 
@@ -981,14 +993,14 @@ nav ul li a:hover {
 
 /* Redes sociais */
 
-.redes{
+.redes {
 
     display: flex;
 
     gap: 18px;
 }
 
-.redes i{
+.redes i {
 
     font-size: 22px;
 
@@ -997,14 +1009,14 @@ nav ul li a:hover {
     transition: .3s;
 }
 
-.redes i:hover{
+.redes i:hover {
 
     color: #9f5cff;
 }
 
 /* Botão */
 
-.vlibras{
+.vlibras {
 
     background: #7c2cff;
 
@@ -1021,14 +1033,14 @@ nav ul li a:hover {
     transition: .3s;
 }
 
-.vlibras:hover{
+.vlibras:hover {
 
     background: #9650ff;
 }
 
 /* Copyright */
 
-.copyright{
+.copyright {
 
     background: #041110;
 
@@ -1040,16 +1052,16 @@ nav ul li a:hover {
 
     font-size: 13px;
 
-    border-top: 1px solid rgba(255,255,255,.08);
+    border-top: 1px solid rgba(255, 255, 255, .08);
 }
 
 /*=========================
       RESPONSIVO
 =========================*/
 
-@media(max-width:900px){
+@media(max-width:900px) {
 
-    .footer{
+    .footer {
 
         flex-wrap: wrap;
 
@@ -1058,22 +1070,22 @@ nav ul li a:hover {
         text-align: center;
     }
 
-    .footerLogo{
+    .footerLogo {
 
         width: 100%;
     }
 
     .footerLinks,
-    .redes{
+    .redes {
 
         justify-content: center;
     }
 
 }
 
-@media(max-width:600px){
+@media(max-width:600px) {
 
-    .footer{
+    .footer {
 
         flex-direction: column;
 
@@ -1083,6 +1095,7 @@ nav ul li a:hover {
     }
 
 }
+
 /* RESPONSIVIDADE*/
 /* Para abrir em tablets */
 

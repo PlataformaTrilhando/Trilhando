@@ -1,11 +1,340 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oportunidades</title>
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+    <link rel="stylesheet" href="../css/oportunidades.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Oportunidades - Trilhando</title>
 </head>
+
 <body>
-    <h1>Página de Oportunidades</h1>
+
+    <!-- Cabeçalho -->
+    <nav>
+        <ul>
+            <li><img class="logo" src="../assets/Images/Icon.png" alt="Logo Trilhando"></li>
+            <li><a href="menu.html">Início</a></li>
+            <li><a href="trilhas.html">Trilhas de Carreira</a></li>
+            <li><a class="ativo" href="#">Oportunidades</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><img class="imgAcessibilidade" src="../assets/Images/acessibilidade.svg"><a href="#">Acessibilidade</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- BREADCRUMB -->
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+            <ol>
+                <li>
+                    <svg class="breadcrumb-icon-home" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                    </svg>
+                    <a href="menu.html">Início</a>
+                    <svg class="breadcrumb-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                    </svg>
+                </li>
+                <li aria-current="page">Oportunidades</li>
+            </ol>
+        </nav>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-texto">
+                <h1>
+                    <span class="linha">Encontre a</span><br>
+                    <span class="linha">sua próxima</span><br>
+                    <span class="linha destaque">oportunidade</span>
+                </h1>
+                <p>Conectamos você às melhores vagas de estágio, Jovem Aprendiz e cursos para impulsionar sua carreira
+                    na tecnologia.</p>
+            </div>
+        </section>
+
+        <div class="main-container">
+
+            <!-- HEADER DA PÁGINA -->
+            <header class="page-header">
+                <div class="header-title">
+                    <h1>Sua Próxima <span>Conquista</span></h1>
+                    <p>Explore vagas de estágio, programas de Jovem Aprendiz e outras oportunidades de trabalho alinhadas com o seu
+                        perfil.</p>
+                </div>
+
+                <!-- BOX DE PESQUISA -->
+                <div class="search-box">
+                    <div class="search-input-wrapper">
+                        <i class="bi bi-search"></i>
+                        <input type="text" id="job-search"
+                            placeholder="Pesquisar por cargo, empresa ou palavra-chave...">
+                    </div>
+                    <div class="filters-row">
+                        <select class="filter-select" id="filter-type">
+                            <option value="">Tipo de Vaga</option>
+                            <option value="estagio">Estágio</option>
+                            <option value="jovem-aprendiz">Jovem Aprendiz</option>
+                            <option value="curso">Curso</option>
+                        </select>
+                        <select class="filter-select" id="filter-area">
+                            <option value="">Área</option>
+                            <option value="tech">Tecnologia</option>
+                            <option value="design">Design</option>
+                            <option value="admin">Administração</option>
+                        </select>
+                        <select class="filter-select" id="filter-dist">
+                            <option value="">Distância</option>
+                            <option value="remoto">Remoto</option>
+                            <option value="10km">Até 10km</option>
+                            <option value="50km">Até 50km</option>
+                        </select>
+                    </div>
+                </div>
+            </header>
+
+            <!-- LISTAGEM DE VAGAS -->
+            <section class="opportunities-list" id="opportunities-container">
+
+                <!-- Card 1 -->
+                <article class="card-opportunity" data-type="estagio" data-area="tech">
+                    <div class="opp-info">
+                        <div class="opp-logo">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+                        <div class="opp-details">
+                            <h3>Estágio em Desenvolvimento Front-end</h3>
+                            <div class="meta">
+                                <span><i class="bi bi-building"></i> Tech Solutions</span>
+                                <span><i class="bi bi-geo-alt"></i> São Paulo, SP (Híbrido)</span>
+                            </div>
+                            <div class="opp-tags">
+                                <span class="opp-tag">React</span>
+                                <span class="opp-tag">CSS Modules</span>
+                                <span class="opp-tag">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opp-action">
+                        <a href="#" class="btn-apply">Candidatar-se</a>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card-opportunity" data-type="jovem-aprendiz" data-area="admin">
+                    <div class="opp-info">
+                        <div class="opp-logo">
+                            <i class="bi bi-briefcase"></i>
+                        </div>
+                        <div class="opp-details">
+                            <h3>Jovem Aprendiz Administrativo</h3>
+                            <div class="meta">
+                                <span><i class="bi bi-building"></i> Inova Corp</span>
+                                <span><i class="bi bi-geo-alt"></i> Rio de Janeiro, RJ</span>
+                            </div>
+                            <div class="opp-tags">
+                                <span class="opp-tag">Pacote Office</span>
+                                <span class="opp-tag">Atendimento</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opp-action">
+                        <a href="#" class="btn-apply">Candidatar-se</a>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card-opportunity" data-type="curso" data-area="design">
+                    <div class="opp-info">
+                        <div class="opp-logo">
+                            <i class="bi bi-palette"></i>
+                        </div>
+                        <div class="opp-details">
+                            <h3>Curso: Fundamentos de UX/UI Design</h3>
+                            <div class="meta">
+                                <span><i class="bi bi-mortarboard"></i> Trilhando Academy</span>
+                                <span><i class="bi bi-globe"></i> Online / Gratuito</span>
+                            </div>
+                            <div class="opp-tags">
+                                <span class="opp-tag">Figma</span>
+                                <span class="opp-tag">Prototipagem</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opp-action">
+                        <a href="#" class="btn-apply">Acessar Curso</a>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="card-opportunity" data-type="estagio" data-area="tech">
+                    <div class="opp-info">
+                        <div class="opp-logo">
+                            <i class="bi bi-database"></i>
+                        </div>
+                        <div class="opp-details">
+                            <h3>Estágio em Análise de Dados</h3>
+                            <div class="meta">
+                                <span><i class="bi bi-building"></i> Data Insight</span>
+                                <span><i class="bi bi-geo-alt"></i> Remoto</span>
+                            </div>
+                            <div class="opp-tags">
+                                <span class="opp-tag">Python</span>
+                                <span class="opp-tag">SQL</span>
+                                <span class="opp-tag">PowerBI</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opp-action">
+                        <a href="#" class="btn-apply">Candidatar-se</a>
+                    </div>
+                </article>
+
+            </section>
+
+            <!-- SIDEBAR LATERAL -->
+            <aside class="sidebar">
+
+                <!-- CARD DESTAQUE -->
+                <div class="featured-card">
+                    <h2>Destaque da Semana</h2>
+                    <p>Oportunidade exclusiva para alunos que concluíram a trilha de Tecnologia.</p>
+
+                    <div class="featured-opp">
+                        <h4>Bootcamp Serasa Experian</h4>
+                        <span><i class="bi bi-star-fill"></i> Inscrições Abertas</span>
+                    </div>
+
+                    <div class="featured-opp">
+                        <h4>Programa PROA 2026</h4>
+                        <span><i class="bi bi-clock"></i> Últimas Vagas</span>
+                    </div>
+
+                    <a href="#" class="btn-featured">Ver Programas Elite</a>
+                </div>
+
+                <!-- OUTROS CONTEÚDOS SIDEBAR -->
+                <div class="search-box" style="max-width: 100%;">
+                    <h3>Dicas de Carreira</h3>
+                    <ul style="list-style: none; margin-top: 15px; color: #b8b8b8; font-size: 14px;">
+                        <li style="margin-bottom: 10px;"><i class="bi bi-check2-circle" style="color: #4fd699;"></i>
+                            Mantenha seu perfil sempre atualizado</li>
+                        <li style="margin-bottom: 10px;"><i class="bi bi-check2-circle" style="color: #4fd699;"></i>
+                            Prepare-se para o precesso seletivo</li>
+                        <li><i class="bi bi-check2-circle" style="color: #4fd699;"></i> Conclua sua trilha</li>
+                    </ul>
+                </div>
+
+            </aside>
+
+        </div>
+
+        <!-- CARD FINAL CTA -->
+
+        <section class="card-final">
+            <div class="card-cta">
+                <div class="cta-icon">
+                    <img src="../assets/Images/card-final-op.png" alt="imagem de um notebook">
+                </div>
+                <div class="card-cta-texto">
+                    <h4>Ainda não se sente pronto para se candidatar?</h4>
+                    <p>Explore nossas Trilhas de Carreira e desenvolva as habilidades mais desejadas pelas empresas.</p>
+                    <button class="btn-cta">Explorar trilhas</button>
+                </div>
+                
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- ==================== RODAPÉ ==================== -->
+    <footer class="footer">
+
+        <div class="footerContainer">
+
+            <div class="footerLogo">
+
+                <img class="logo" src="../assets/Images/Icon.png" alt="Logo">
+
+                <p>
+                    Seu caminho para um futuro melhor.
+                </p>
+
+                <div class="footerLinks">
+                    <a href="#">Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+
+            </div>
+
+            <div class="footerCol">
+
+                <h3>Navegação</h3>
+
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="trilhas.html">Trilhas de Carreira</a></li>
+                    <li><a href="oportunidades.html">Oportunidades</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footerCol">
+
+                <h3>Recursos</h3>
+
+                <ul>
+                    <li><a href="#">Como funciona</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Dicas de Carreira</a></li>
+                    <li><a href="#">Conteúdos</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footerCol">
+
+                <h3>Contato</h3>
+
+                <p>team.trilhando@gmail.com</p>
+
+                <div class="redes">
+                    <a href="https://www.instagram.com/trilhando.tech/" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-youtube"></i>
+                </div>
+
+            </div>
+
+            <div class="footerCol">
+
+                <h3>Acessibilidade</h3>
+
+                <p>A+ &nbsp;&nbsp; A-</p>
+
+                <button class="vlibras">
+                    VLibras
+                </button>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <div class="copyright">
+        © 2026 Trilhando. Todos os direitos reservados.
+    </div>
+
+    <script src="../js/oportunidades.js"></script>
+
 </body>
+
 </html>

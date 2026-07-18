@@ -196,44 +196,42 @@ nav ul li a.ativo:hover {
     background-repeat: no-repeat;
 }
 
-.hero-texto {
-
-    width: 500px;
-
-}
-
 .hero-texto h1 {
-
+    background: transparent;
     color: white;
-
-    font-size: 70px;
-
+    font-size: 50px;
     font-weight: 800;
-
-    line-height: .92;
-
-    margin-bottom: 35px;
-
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease-out forwards;
+    white-space: nowrap;
 }
 
-.hero-texto span {
-
+.hero-texto h1 .destaque {
     color: #8F3EF7;
-
+    display: inline-block;
+    background: transparent;
 }
 
 .hero-texto p {
-
     color: #d6d6d6;
-
     font-size: 18px;
+    max-width: 600px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease-out 0.3s forwards;
+}
 
-    line-height: 1.8;
+.hero-texto span {
+    background: transparent;
+}
 
-    margin-bottom: 45px;
-
-    width: 500px;
-
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* CARDS */
@@ -782,60 +780,71 @@ nav ul li a.ativo:hover {
 /* CARD CTA FINAL */
 .card-final {
     max-width: 1200px;
-    margin: 60px auto 0 auto;
+    margin: 60px auto;
     padding: 0 20px;
 }
 
 .card-final .card-cta {
-    background: #0E0015;
+    background: linear-gradient(to right, #481f58 0%, #2c1435 100%);
+    border: 1px solid #fff;
     border-radius: 16px;
-    padding: 35px;
+    padding: 24px 28px;
     display: flex;
     align-items: center;
-    gap: 24px;
-    border: 1px solid #fff;
-    margin-top: 20px;
+    gap: 20px;
 }
 
-.card-final .card-cta .cta-icon {
-
+.card-final .cta-icon {
     flex-shrink: 0;
-    margin: 10px;
+    width: 56px;
+    height: 56px;
 }
 
-.card-final .card-cta h4 {
-    color: #fff;
-    margin: 0 0 5px 0;
-    font-size: 32px;
+.card-final .cta-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
-.card-final .card-cta p {
-    color: #fff;
+.card-final .card-cta-texto {
+    flex: 1;
+    /* ocupa o meio */
+}
+
+.card-final .card-cta-texto h4 {
     font-size: 18px;
-    margin: 10px 0 0 0;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 4px 0;
+}
+
+.card-final .card-cta-texto p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
 }
 
 .card-final .btn-cta {
-    background: #722396;
+    background: linear-gradient(to right, #521f68 0%, #2c1435 100%);
+    /* roxo do botão */
     color: #fff;
-    border: none;
-    padding: 12px 20px;
+    padding: 10px 18px;
     border-radius: 8px;
-    /* font-weight: 600; */
+    border: 1px solid white;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
     cursor: pointer;
     white-space: nowrap;
-    margin-left: auto;
-}
-
-.btn-cta {
-    width: 200px;
-    height: 60px;
+    transition: 0.3s;
 }
 
 .card-final .btn-cta:hover {
     background: #fff;
-    color: #722396;
-    transition: 0.4s;
+    color: #b65cff;
+    transform: translateY(-2px);
 }
 
 /* ===== BARRA DE PROGRESSO GENERICA ===== */
