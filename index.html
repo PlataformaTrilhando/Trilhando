@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Trilhando</title>
 </head>
 
 <body>
+
     <!-- ==================== CABEÇALHO ==================== -->
 
     <nav>
@@ -19,10 +20,12 @@
             <li><a href="trilhas.html">Trilhas de Carreira</a></li>
             <li><a href="oportunidades.html">Oportunidades</a></li>
             <li><a href="sobre.html">Sobre</a></li>
-            <li><img class="imgAcessibilidade" src="../assets/icons/acessibilidade.svg"><a href="#">Acessibilidade</a>
+            <li><img class="imgAcessibilidade" src="./assets/Images/acessibilidade.jpeg"><a href="#" onclick="window.VLibras.toggle()">Acessibilidade</a>
             </li>
         </ul>
     </nav>
+    <!-- ==================== FIM CABEÇALHO ==================== -->
+
     <!-- ==================== CONTEÚDO ==================== -->
 
     <main>
@@ -134,7 +137,8 @@
                         Gestão, finanças, recursos humanos e negócios.
                     </p>
 
-                    <button class="btn-inativo" title="Esse conteúdo não faz parte do escopo do nosso MVP">Explore</button>
+                    <button class="btn-inativo"
+                        title="Esse conteúdo não faz parte do escopo do nosso MVP">Explore</button>
 
                 </article>
 
@@ -148,7 +152,8 @@
                         Comunicação, estratégia, conteúdo e crescimento.
                     </p>
 
-                    <button class="btn-inativo" title="Esse conteúdo não faz parte do escopo do nosso MVP">Explore</button>
+                    <button class="btn-inativo"
+                        title="Esse conteúdo não faz parte do escopo do nosso MVP">Explore</button>
 
                 </article>
 
@@ -162,7 +167,8 @@
                         Criação, UX/UI, identidade visual e experiência.
                     </p>
 
-                    <button class="btn-inativo" title="Esse conteúdo não faz parte do escopo do nosso MVP">Explore</button>
+                    <button class="btn-inativo"
+                        title="Esse conteúdo não faz parte do escopo do nosso MVP">Explore</button>
 
                 </article>
 
@@ -369,7 +375,18 @@
         © 2026 Trilhando. Todos os direitos reservados.
     </div>
 
-    <script src="../js/menu.js"></script>
+    <script src="./js/menu.js"></script>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 
 </html>
