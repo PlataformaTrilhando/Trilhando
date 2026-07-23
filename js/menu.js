@@ -1,5 +1,5 @@
 /**
- * Script para expansão do card de Tecnologia - Trilhando
+ * Script para expansão do card de Tecnologia
  */
 
 document.addEventListener('DOMContentLoaded', () => {
