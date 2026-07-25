@@ -255,12 +255,21 @@ nav ul li a.ativo:hover {
 
 .info-card {
     background: #150621;
-    /* border: 1px solid #2E2950; */
     border-radius: 14px;
     padding: 14px 16px;
     display: flex;
     align-items: center;
     gap: 12px;
+}
+
+.trilha-info .info-card,
+.trilha-info .info-card-3:hover {
+    transition: .35s;
+}
+
+.trilha-info .info-card:hover,
+.trilha-info .info-card-3:hover  {
+    transform: translateY(-4px);
 }
 
 .info-icon {
@@ -351,6 +360,13 @@ nav ul li a.ativo:hover {
     color: #FFFFFF;
 }
 
+.card-sobre {
+    transition: .35s;
+}
+
+.card-sobre:hover{
+    transform: translateX(8px);
+}
 .card-sobre h3 {
     font-size: 20px;
     font-weight: 700;
@@ -658,7 +674,6 @@ nav ul li a.ativo:hover {
 /* GARANTE O SCROLL MESMO COM POUCOS ITENS */
 .soft-skills .trilha-scroll {
     max-height: 600px;
-    /* mesma altura da tecnica */
     overflow-y: auto;
     padding-right: 15px;
 }
@@ -792,6 +807,13 @@ nav ul li a.ativo:hover {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.card-final .card-cta {
+    transition: 0.35s;
+}
+.card-final .card-cta:hover{
+    transform: translateY(-4px);
 }
 
 .card-final .cta-icon {
