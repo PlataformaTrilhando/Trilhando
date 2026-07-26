@@ -22,17 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
         cards.forEach(card => {
             const title = card.querySelector('h3').textContent.toLowerCase();
             const company = card.querySelector('.meta').textContent.toLowerCase();
-            const cardType = card.getAttribute('data-type');
-            const cardArea = card.getAttribute('data-area');
-            
+            const cardType = card.getAttribute('data-type') || "";
+            const cardArea = card.getAttribute('data-area') || "";
+            const cardDist = card.getAttribute('data-dist') || ""; // 1. Lê a tag. Se não tiver vira ""
+
             // Lógica de correspondência
             const matchesSearch = title.includes(searchTerm) || company.includes(searchTerm);
             const matchesType = typeValue === "" || cardType === typeValue;
             const matchesArea = areaValue === "" || cardArea === areaValue;
-            
-            // Para distância, como é um exemplo estático, vamos apenas simular
-            // No mundo real, isso dependeria de dados de geolocalização ou tags
-            const matchesDist = distValue === "" || (distValue === "remoto" && company.includes("remoto"));
+            const matchesDist = distValue === "" || cardDist === distValue; // 2. Compara igual aos outros
 
             if (matchesSearch && matchesType && matchesArea && matchesDist) {
                 card.style.display = 'flex';
@@ -64,14 +62,12 @@ document.addEventListener('DOMContentLoaded', () => {
     searchInput.addEventListener('input', filterJobs);
     filterType.addEventListener('change', filterJobs);
     filterArea.addEventListener('change', filterJobs);
-    filterDist.addEventListener('change', filterJobs);
+    filterDist.addEventListener('change', filterJobs); // Já estava certo
 
-    // Efeito de clique nos cards (opcional, para simular seleção)
+    // Efeito de clique nos cards
     cards.forEach(card => {
         card.addEventListener('click', () => {
-            // Remove destaque de outros
             cards.forEach(c => c.style.borderColor = '#3a2a55');
-            // Adiciona destaque ao clicado
             card.style.borderColor = '#8F3EF7';
         });
     });

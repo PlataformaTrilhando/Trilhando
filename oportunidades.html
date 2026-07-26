@@ -80,7 +80,7 @@
                             <option value="">Tipo de Vaga</option>
                             <option value="estagio">Estágio</option>
                             <option value="jovem-aprendiz">Jovem Aprendiz</option>
-                            <option value="curso">Curso</option>
+                            <option value="PCD">PCD</option>
                         </select>
                         <select class="filter-select" id="filter-area">
                             <option value="">Área</option>
@@ -91,8 +91,9 @@
                         <select class="filter-select" id="filter-dist">
                             <option value="">Distância</option>
                             <option value="remoto">Remoto</option>
+                            <option value="hibrido">Híbrido</option>
                             <option value="10km">Até 10km</option>
-                            <option value="50km">Até 50km</option>
+                            
                         </select>
                     </div>
                 </div>
@@ -102,7 +103,7 @@
             <section class="opportunities-list" id="opportunities-container">
 
                 <!-- Card 1 -->
-                <article class="card-opportunity" data-type="estagio" data-area="tech">
+                <article class="card-opportunity" data-type="estagio" data-area="tech" data-dist="hibrido">
                     <div class="opp-info">
                         <div class="opp-logo">
                             <i class="bi bi-laptop"></i>
@@ -126,7 +127,7 @@
                 </article>
 
                 <!-- Card 2 -->
-                <article class="card-opportunity" data-type="jovem-aprendiz" data-area="admin">
+                <article class="card-opportunity" data-type="jovem-aprendiz" data-area="admin" data-dist="presencial">
                     <div class="opp-info">
                         <div class="opp-logo">
                             <i class="bi bi-briefcase"></i>
@@ -135,7 +136,7 @@
                             <h3>Jovem Aprendiz Administrativo</h3>
                             <div class="meta">
                                 <span><i class="bi bi-building"></i> Inova Corp</span>
-                                <span><i class="bi bi-geo-alt"></i> Rio de Janeiro, RJ</span>
+                                <span><i class="bi bi-geo-alt"></i> Guarulhos, SP</span>
                             </div>
                             <div class="opp-tags">
                                 <span class="opp-tag">Pacote Office</span>
@@ -149,30 +150,31 @@
                 </article>
 
                 <!-- Card 3 -->
-                <article class="card-opportunity" data-type="curso" data-area="design">
+                <article class="card-opportunity" data-type="PCD" data-area="tech" data-dist="remoto">
                     <div class="opp-info">
                         <div class="opp-logo">
-                            <i class="bi bi-palette"></i>
+                            <i class="bi bi-laptop"></i>
                         </div>
                         <div class="opp-details">
-                            <h3>Curso: Fundamentos de UX/UI Design</h3>
+                            <h3>Desenvolvedor Full Stack (PCD)</h3>
                             <div class="meta">
-                                <span><i class="bi bi-mortarboard"></i> Trilhando Academy</span>
-                                <span><i class="bi bi-globe"></i> Online / Gratuito</span>
+                                <span><i class="bi bi-building"></i> Avanade</span>
+                                <span><i class="bi bi-geo-alt"></i> Remoto</span>
                             </div>
                             <div class="opp-tags">
-                                <span class="opp-tag">Figma</span>
-                                <span class="opp-tag">Prototipagem</span>
+                                <span class="opp-tag">React</span>
+                                <span class="opp-tag">.NET</span>
+                                <span class="opp-tag">Azure</span>
                             </div>
                         </div>
                     </div>
                     <div class="opp-action">
-                        <a href="#" class="btn-apply">Acessar Curso</a>
+                        <a href="#" class="btn-apply">Candidatar-se</a>
                     </div>
                 </article>
 
                 <!-- Card 4 -->
-                <article class="card-opportunity" data-type="estagio" data-area="tech">
+                <article class="card-opportunity" data-type="estagio" data-area="tech" data-dist="remoto">
                     <div class="opp-info">
                         <div class="opp-logo">
                             <i class="bi bi-database"></i>
