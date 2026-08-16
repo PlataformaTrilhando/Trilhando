@@ -24,11 +24,14 @@ Nosso objetivo é reduzir a distância entre a qualificação e o mercado de tra
 
 ## 🛠️ Tecnologias
 
-Este projeto está sendo desenvolvido com:
+Este projeto foi desenvolvido com:
 
 * HTML5
 * CSS3
 * JavaScript
+* EmailJS
+* Bootstrap icons
+
 
 ---
 
@@ -36,16 +39,28 @@ Este projeto está sendo desenvolvido com:
 
 ```text
 trilhando/
-│
+├── .vscode/
 ├── assets/
+│   ├── icons/
+│   │   └── icon.png
+│   └── images/
 ├── css/
-├── docs/
+│   ├── global.css
+│   ├── inicio.css
+│   ├── oportunidades.css
+│   ├── sobre.css
+│   └── trilhas.css
 ├── js/
-├── pages/
-│
+│   ├── global.js
+│   ├── menu.js
+│   ├── oportunidades.js
+│   ├── sobre.js
+│   └── trilhas.js
 ├── index.html
+├── oportunidades.html
+├── sobre.html
+├── trilhas.html
 ├── README.md
-└── .gitignore
 ```
 
 ---
