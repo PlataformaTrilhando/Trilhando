@@ -4,27 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/inicio.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="icon" href="./assets/icons/Icon.png">
     <title>Trilhando</title>
+    <link rel="stylesheet" href="./css/global.css">
 </head>
 
 <body>
 
     <!-- ==================== CABEÇALHO ==================== -->
+    <header class="navegacao">
+        <div class="navegacao__barra">
+            <a class="navegacao__marca" href="index.html" aria-label="Trilhando - início">
+                <img class="navegacao__logo" src="./assets/Images/Icon.png" alt="Logo Trilhando">
+            </a>
+            <div class="navegacao__centro">
+                <ul class="navegacao__lista" id="menu-principal" data-menu-lista>
+                    <li class="navegacao__item"><a class="navegacao__link ativo" href="index.html"
+                            aria-current="page">Início</a></li>
+                    <li class="navegacao__item"><a class="navegacao__link" href="trilhas.html">Trilhas de Carreira</a>
+                    </li>
+                    <li class="navegacao__item"><a class="navegacao__link" href="oportunidades.html">Oportunidades</a>
+                    </li>
+                    <li class="navegacao__item"><a class="navegacao__link" href="sobre.html">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="navegacao__acoes">
+                <button class="navegacao__acessibilidade-botao" type="button" data-acessibilidade
+                    aria-label="Sobre a acessibilidade">
+                    <img class="navegacao__acessibilidade" src="./assets/Images/acessibilidade.jpeg" alt="">
+                    <span>Acessibilidade</span>
+                </button>
+                <button class="navegacao__botao" type="button" data-menu-botao aria-expanded="false"
+                    aria-controls="menu-principal" aria-label="Abrir menu">
+                    <span class="navegacao__icone" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="menu-sobreposicao" data-menu-sobreposicao aria-hidden="true"></div>
+    <div class="acessibilidade-toast" role="status" aria-live="polite" data-acessibilidade-toast>
+        <strong>Acessibilidade</strong>
+        <span>A Trilhando valoriza a inclusão e segue as diretrizes da LGPD para tornar o acesso a vagas, conhecimento e
+            oportunidades mais acessível para todos.</span>
+    </div>
 
-    <nav>
-        <ul>
-            <li><img class="logo" src="../assets/Images/Icon.png"></li>
-            <li><a href="#" class="ativo">Início</a></li>
-            <li><a href="trilhas.html">Trilhas de Carreira</a></li>
-            <li><a href="oportunidades.html">Oportunidades</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><img class="imgAcessibilidade" src="./assets/Images/acessibilidade.jpeg"><a href="#" onclick="window.VLibras.toggle()">Acessibilidade</a>
-            </li>
-        </ul>
-    </nav>
+
     <!-- ==================== FIM CABEÇALHO ==================== -->
 
     <!-- ==================== CONTEÚDO ==================== -->
@@ -48,7 +74,7 @@
                     encontrar oportunidades para transformar seu potencial em realização.
                 </p>
 
-                <a href="#" class="btnHero">
+                <a href="trilhas.html" class="btnHero">
                     Explorar Trilhas
                     <span>→</span>
                 </a>
@@ -200,7 +226,7 @@
                         <span>JavaScript</span>
                     </div>
 
-                    <a href="#">Ver detalhes →</a>
+                    <a href="oportunidades.html">Ver detalhes →</a>
 
                 </article>
 
@@ -218,7 +244,7 @@
                         <span>Informática</span>
                         <span>Suporte</span>
                         <span>Aprendizado</span>
-                        <a href="#">Ver detalhes →</a>
+                        <a href="oportunidades.html">Ver detalhes →</a>
                     </div>
 
                 </article>
@@ -238,14 +264,14 @@
                         <span>CSS</span>
                         <span>Git</span>
                         <span>Github</span>
-                        <a href="#">Ver detalhes →</a>
+                        <a href="oportunidades.html">Ver detalhes →</a>
                     </div>
 
                 </article>
 
             </div>
 
-            <button class="btnTodas">
+            <button class="btnTodas" onclick="window.location.href='oportunidades.html'">
                 Ver todas as oportunidades
             </button>
 
@@ -256,7 +282,7 @@
         <section class="sobre">
 
             <div class="sobreImagem">
-                <img src="../assets/Images/sobreTrilhando.png" alt="Sobre a Trilhando">
+                <img src="./assets/Images/sobreTrilhando.png" alt="Sobre a Trilhando">
             </div>
 
             <div class="sobreTexto">
@@ -295,86 +321,29 @@
     </main>
 
     <!-- ==================== RODAPÉ ==================== -->
-    <footer class="footer">
-
-        <div class="footerContainer">
-
-            <div class="footerLogo">
-
-                <img class="logo" src="../assets/Images/Icon.png" alt="Logo">
-
-                <p>
-                    Seu caminho para um futuro melhor.
-                </p>
-
-                <div class="footerLinks">
-                    <a href="#">Privacidade</a>
-                    <a href="#">Termos de Uso</a>
-                </div>
-
+    <footer class="rodape">
+        <div class="rodape__conteudo">
+            <a class="rodape__marca" href="index.html" aria-label="Trilhando - início">
+                <img src="./assets/Images/Icon.png" alt="Logo Trilhando">
+                <span>Seu caminho para um futuro melhor.</span>
+            </a>
+            <nav class="rodape__navegacao" aria-label="Navegação do rodapé">
+                <a href="index.html">Início</a>
+                <a href="trilhas.html">Trilhas de Carreira</a>
+                <a href="oportunidades.html">Oportunidades</a>
+                <a href="sobre.html">Sobre</a>
+            </nav>
+            <div class="rodape__contato">
+                <a href="sobre.html#contato" data-contato-link>team.trilhando@gmail.com</a>
+                <a class="rodape__instagram" href="https://www.instagram.com/trilhando.tech/" target="_blank"
+                    rel="noopener" aria-label="Instagram da Trilhando">
+                    <i class="bi bi-instagram" aria-hidden="true"></i>
+                </a>
             </div>
-
-            <div class="footerCol">
-
-                <h3>Navegação</h3>
-
-                <ul>
-                    <li><a href="../index.html">Início</a></li>
-                    <li><a href="trilhas.html">Trilhas de Carreira</a></li>
-                    <li><a href="oportunidades.html">Oportunidades</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                </ul>
-
-            </div>
-
-            <div class="footerCol">
-
-                <h3>Recursos</h3>
-
-                <ul>
-                    <li><a href="#">Como funciona</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Dicas de Carreira</a></li>
-                    <li><a href="#">Conteúdos</a></li>
-                </ul>
-
-            </div>
-
-            <div class="footerCol">
-
-                <h3>Contato</h3>
-
-                <p>team.trilhando@gmail.com</p>
-
-                <div class="redes">
-                    <a href="https://www.instagram.com/trilhando.tech/" target="_blank">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                    <i class="bi bi-linkedin"></i>
-                    <i class="bi bi-youtube"></i>
-                </div>
-
-            </div>
-
-            <div class="footerCol">
-
-                <h3>Acessibilidade</h3>
-
-                <p>A+ &nbsp;&nbsp; A-</p>
-
-                <button class="vlibras">
-                    VLibras
-                </button>
-
-            </div>
-
         </div>
-
+        <div class="rodape__base"><span>© 2026 Trilhando. Todos os direitos reservados.</span><span>Feito para conectar,
+                aprender e evoluir.</span></div>
     </footer>
-
-    <div class="copyright">
-        © 2026 Trilhando. Todos os direitos reservados.
-    </div>
 
     <script src="./js/menu.js"></script>
     <div vw class="enabled">
@@ -388,6 +357,7 @@
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
+    <script src="./js/global.js"></script>
 </body>
 
 </html>

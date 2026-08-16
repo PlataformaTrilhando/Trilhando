@@ -18,7 +18,7 @@ body {
 nav {
     background-color: black;
     user-select: none;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
 }
 
 nav ul {
@@ -27,7 +27,7 @@ nav ul {
     justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 li {
@@ -43,13 +43,13 @@ li a {
 }
 
 .logo {
-    height: 50px;
+    height: 3.125rem;
 }
 
 .imgAcessibilidade {
-    margin-right: 5px;
-    height: 20px;
-    width: 20px;
+    margin-right: 0.3125rem;
+    height: 1.25rem;
+    width: 1.25rem;
 }
 
 nav ul li a:hover {
@@ -65,9 +65,9 @@ nav ul li a.ativo {
 
 /* BREADCRUMB */
 .breadcrumb {
-    padding: 16px 0;
-    font-size: 14px;
-    margin-left: 40px;
+    padding: 1rem 0;
+    font-size: 0.875rem;
+    margin-left: 2.5rem;
     background-color: #06040D;
 }
 
@@ -75,7 +75,7 @@ nav ul li a.ativo {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
     margin: 0;
     padding: 0;
 }
@@ -83,7 +83,7 @@ nav ul li a.ativo {
 .breadcrumb li {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 .breadcrumb a {
@@ -98,14 +98,14 @@ nav ul li a.ativo {
 }
 
 .breadcrumb-icon-home {
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
     color: #00FF55;
 }
 
 .breadcrumb-icon {
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
     color: #B8B5FF;
     flex-shrink: 0;
 }
@@ -122,24 +122,24 @@ nav ul li a.ativo {
 /* HERO */
 .hero {
     width: 100%;
-    height: 400px;
+    height: 25rem;
     display: flex;
     align-items: center;
-    padding-left: 70px;
+    padding-left: 4.375rem;
     background-image: linear-gradient(90deg, rgba(0, 0, 0, .9) 0%, rgba(0, 0, 0, .6) 50%, rgba(0, 0, 0, .3) 100%), url("../assets/Images/oportunidadeshero.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 }
 
 .hero-texto h1 {
     color: white;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 800;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(1.25rem);
     animation: fadeUp 0.8s ease-out forwards;
 }
 
@@ -150,10 +150,10 @@ nav ul li a.ativo {
 
 .hero-texto p {
     color: #d6d6d6;
-    font-size: 18px;
-    max-width: 600px;
+    font-size: 1.125rem;
+    max-width: 37.5rem;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(1.25rem);
     animation: fadeUp 0.8s ease-out 0.3s forwards;
 }
 
@@ -166,13 +166,13 @@ nav ul li a.ativo {
 
 /* CONTEÚDO PRINCIPAL - GRID LAYOUT */
 .main-container {
-    max-width: 1300px;
+    max-width: 81.25rem;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1.25rem;
     display: grid;
-    grid-template-columns: 1fr 350px;
+    grid-template-columns: 1fr 21.875rem;
     /* Coluna principal e lateral */
-    gap: 30px;
+    gap: 1.875rem;
 }
 
 /* CABEÇALHO DA PÁGINA COM PESQUISA */
@@ -181,15 +181,15 @@ nav ul li a.ativo {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .header-title h1 {
-    font-size: 42px;
+    font-size: 2.625rem;
     font-weight: 800;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .header-title h1 span {
@@ -198,27 +198,27 @@ nav ul li a.ativo {
 
 .header-title p {
     color: #b8b8b8;
-    max-width: 500px;
+    max-width: 31.25rem;
 }
 
 /* BOX DE PESQUISA E FILTROS */
 .search-box {
     background: #1a1424;
-    border: 1px solid #fff;
-    padding: 25px;
-    border-radius: 16px;
+    border: 0.0625rem solid #fff;
+    padding: 1.5625rem;
+    border-radius: 1rem;
     width: 100%;
-    max-width: 550px;
+    max-width: 34.375rem;
 }
 
 .search-input-wrapper {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .search-input-wrapper i {
     position: absolute;
-    left: 15px;
+    left: 0.9375rem;
     top: 50%;
     transform: translateY(-50%);
     color: #CD97EB;
@@ -226,10 +226,10 @@ nav ul li a.ativo {
 
 .search-input-wrapper input {
     width: 100%;
-    padding: 12px 15px 12px 45px;
+    padding: 0.75rem 0.9375rem 0.75rem 2.8125rem;
     background: #06040D;
-    border: 1px solid #3a2a55;
-    border-radius: 10px;
+    border: 0.0625rem solid #3a2a55;
+    border-radius: 0.625rem;
     color: white;
     font-family: inherit;
     outline: none;
@@ -242,16 +242,16 @@ nav ul li a.ativo {
 .filters-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .filter-select {
     background: #06040D;
-    border: 1px solid #3a2a55;
+    border: 0.0625rem solid #3a2a55;
     color: #d6d6d6;
-    padding: 8px 10px;
-    border-radius: 8px;
-    font-size: 13px;
+    padding: 0.5rem 0.625rem;
+    border-radius: 0.5rem;
+    font-size: 0.8125rem;
     outline: none;
     cursor: pointer;
 }
@@ -260,14 +260,14 @@ nav ul li a.ativo {
 .opportunities-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .card-opportunity {
     background: #102A23;
-    border: 1px solid #3a2a55;
-    border-radius: 14px;
-    padding: 20px;
+    border: 0.0625rem solid #3a2a55;
+    border-radius: 0.875rem;
+    padding: 1.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -276,87 +276,87 @@ nav ul li a.ativo {
 
 .card-opportunity:hover {
     border-color: #8F3EF7;
-    transform: translateX(5px);
+    transform: translateX(0.3125rem);
 }
 
 .opp-info {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     align-items: center;
 }
 
 .opp-logo {
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
     background: #2a1f3d;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #CD97EB;
 }
 
 .opp-details h3 {
-    font-size: 20px;
-    margin-bottom: 5px;
+    font-size: 1.25rem;
+    margin-bottom: 0.3125rem;
 }
 
 .opp-details .meta {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #b8b8b8;
     display: flex;
-    gap: 15px;
+    gap: 0.9375rem;
 }
 
 .opp-details .meta span {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 0.3125rem;
 }
 
 .opp-tags {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     display: flex;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 .opp-tag {
-    font-size: 11px;
+    font-size: 0.6875rem;
     background: rgba(143, 62, 247, 0.1);
     color: #CD97EB;
-    padding: 3px 8px;
-    border-radius: 4px;
+    padding: 0.1875rem 0.5rem;
+    border-radius: 0.25rem;
 }
 
 .opp-action .btn-apply {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     background: #8F3EF7;
     color: white;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 0.875rem;
     transition: 0.3s;
 }
 
 .opp-action .btn-apply:hover {
     background: #7d29eb;
-    box-shadow: 0 0 15px rgba(143, 62, 247, 0.4);
+    box-shadow: 0 0 0.9375rem rgba(143, 62, 247, 0.4);
 }
 
 /* BARRA LATERAL (DIREITA) */
 .sidebar {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 1.875rem;
 }
 
 .featured-card {
     background: linear-gradient(125deg, #7220a1 0%, #3d1257 100%);
-    border: 1px solid #8F3EF7;
-    border-radius: 16px;
-    padding: 25px;
+    border: 0.0625rem solid #8F3EF7;
+    border-radius: 1rem;
+    padding: 1.5625rem;
     position: relative;
     overflow: hidden;
 }
@@ -364,54 +364,54 @@ nav ul li a.ativo {
 .featured-card::before {
     content: "DESTAQUE";
     position: absolute;
-    top: 15px;
+    top: 0.9375rem;
     right: -25px;
     background: #4fd699;
     color: black;
-    font-size: 10px;
+    font-size: 0.625rem;
     font-weight: 800;
-    padding: 5px 30px;
+    padding: 0.3125rem 1.875rem;
     transform: rotate(45deg);
 }
 
 .featured-card h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
+    font-size: 1.375rem;
+    margin-bottom: 0.9375rem;
     color: #e4b1ff;
 }
 
 .featured-card p {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #d6d6d6;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .featured-opp {
     background: rgba(255, 255, 255, 0.05);
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    padding: 0.9375rem;
+    border-radius: 0.625rem;
+    margin-bottom: 1.25rem;
 }
 
 .featured-opp h4 {
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
 }
 
 .featured-opp span {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #4fd699;
 }
 
 .btn-featured {
     display: block;
     width: 100%;
-    padding: 12px;
+    padding: 0.75rem;
     background: white;
     color: black;
     text-align: center;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     font-weight: 700;
     transition: 0.3s;
 }
@@ -422,30 +422,30 @@ nav ul li a.ativo {
 
 /* CARD CTA FINAL */
 .card-final {
-    max-width: 1200px;
-    margin: auto ;
+    max-width: 75rem;
+    margin: auto;
 }
 
 .card-final .card-cta {
     background: #0E0015;
-    border-radius: 15px;
-    padding: 35px;
+    border-radius: 0.9375rem;
+    padding: 2.1875rem;
     display: flex;
     align-items: center;
-    gap: 24px;
-    border: 1px solid #722396;
-    margin-top: 20px;
+    gap: 1.5rem;
+    border: 0.0625rem solid #722396;
+    margin-top: 1.25rem;
 }
 
 .card-final .card-cta .cta-icon {
 
     flex-shrink: 0;
-    margin: 10px;
+    margin: 0.625rem;
 }
 
 .card-cta-texto {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     align-items: flex-start;
     flex-direction: column;
     text-align: center;
@@ -453,22 +453,22 @@ nav ul li a.ativo {
 
 .card-final .card-cta h4 {
     color: #CD97EB;
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .card-final .card-cta p {
     color: #fff;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .card-final .btn-cta {
     background: #CD97EB;
     color: #174232;
     border: none;
-    border-radius: 32px;
+    border-radius: 2rem;
     cursor: pointer;
     white-space: nowrap;
-    border: 1px solid #174232;
+    border: 0.0625rem solid #174232;
 }
 
 .card-final a {
@@ -477,16 +477,16 @@ nav ul li a.ativo {
 }
 
 .btn-cta {
-    width: 340px;
-    height: 48px;
+    width: 21.25rem;
+    height: 3rem;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .card-final .btn-cta:hover {
     background: #36283d;
     color: #00ffa2;
-    border: 1px solid white;
+    border: 0.0625rem solid white;
     transition: 0.6s;
 }
 
@@ -499,22 +499,22 @@ nav ul li a.ativo {
 
     color: #fff;
 
-    margin-top: 80px;
+    margin-top: 5rem;
 
-    padding: 40px 0;
+    padding: 2.5rem 0;
 
-    border-top: 1px solid rgba(255, 255, 255, .08);
+    border-top: 0.0625rem solid rgba(255, 255, 255, .08);
 }
 
 /* Container */
 
 .footerContainer {
 
-    max-width: 1200px;
+    max-width: 75rem;
 
     margin: 0 auto;
 
-    padding: 0 40px;
+    padding: 0 2.5rem;
 
     display: flex;
 
@@ -522,39 +522,39 @@ nav ul li a.ativo {
 
     align-items: flex-start;
 
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 /* Logo */
 
 .footerLogo {
 
-    width: 260px;
+    width: 16.25rem;
 }
 
 .logo {
 
-    width: 70px;
+    width: 4.375rem;
 
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .footerLogo p {
 
-    font-size: 14px;
+    font-size: 0.875rem;
 
     color: #d4d4d4;
 
     line-height: 1.6;
 
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 }
 
 .footerLinks {
 
     display: flex;
 
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .footerLinks a {
@@ -563,7 +563,7 @@ nav ul li a.ativo {
 
     text-decoration: none;
 
-    font-size: 13px;
+    font-size: 0.8125rem;
 }
 
 .footerLinks a:hover {
@@ -575,9 +575,9 @@ nav ul li a.ativo {
 
 .footerCol h3 {
 
-    font-size: 16px;
+    font-size: 1rem;
 
-    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
 }
 
 .footerCol ul {
@@ -587,7 +587,7 @@ nav ul li a.ativo {
 
 .footerCol ul li {
 
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 }
 
 .footerCol a {
@@ -596,7 +596,7 @@ nav ul li a.ativo {
 
     text-decoration: none;
 
-    font-size: 14px;
+    font-size: 0.875rem;
 
     transition: .3s;
 }
@@ -610,9 +610,9 @@ nav ul li a.ativo {
 
     color: #d6d6d6;
 
-    font-size: 14px;
+    font-size: 0.875rem;
 
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 /* Redes sociais */
@@ -621,12 +621,12 @@ nav ul li a.ativo {
 
     display: flex;
 
-    gap: 18px;
+    gap: 1.125rem;
 }
 
 .redes i {
 
-    font-size: 22px;
+    font-size: 1.375rem;
 
     cursor: pointer;
 
@@ -648,9 +648,9 @@ nav ul li a.ativo {
 
     border: none;
 
-    border-radius: 6px;
+    border-radius: 0.375rem;
 
-    padding: 8px 18px;
+    padding: 0.5rem 1.125rem;
 
     cursor: pointer;
 
@@ -672,18 +672,18 @@ nav ul li a.ativo {
 
     text-align: center;
 
-    padding: 18px;
+    padding: 1.125rem;
 
-    font-size: 13px;
+    font-size: 0.8125rem;
 
-    border-top: 1px solid rgba(255, 255, 255, .08);
+    border-top: 0.0625rem solid rgba(255, 255, 255, .08);
 }
 
 /*=========================
       RESPONSIVO
 =========================*/
 
-@media(max-width:900px) {
+@media(max-width:56.25rem) {
 
     .footer {
 
@@ -707,7 +707,7 @@ nav ul li a.ativo {
 
 }
 
-@media(max-width:600px) {
+@media(max-width:37.5rem) {
 
     .footer {
 
@@ -721,17 +721,126 @@ nav ul li a.ativo {
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .hero {
-        padding-left: 20px;
-        height: 300px;
+        padding-left: 1.25rem;
+        height: 18.75rem;
     }
 
     .hero-texto h1 {
-        font-size: 36px;
+        font-size: 2.25rem;
     }
 
     .oportunidades-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Camada responsiva da página — base mobile-first aplicada por global.css */
+@media (max-width: 48rem) {
+    .hero {
+        min-height: 34rem;
+        height: auto;
+        padding: 4rem 1.25rem;
+    }
+
+    .hero-texto {
+        width: min(100%, 32rem);
+    }
+
+    .hero-texto h1 {
+        font-size: clamp(2.5rem, 10vw, 4.375rem);
+    }
+
+    .hero-texto p {
+        width: auto;
+        max-width: 32rem;
+        font-size: 1rem;
+    }
+
+    .comoFunciona,
+    .areas,
+    .oportunidades {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+    }
+
+    .comoFunciona h2,
+    .areas h2,
+    .oportunidades h2 {
+        font-size: clamp(1.75rem, 7vw, 2.125rem);
+    }
+
+    .cards,
+    .cardsAreas,
+    .cardsOportunidades {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1rem;
+    }
+
+    .card,
+    .cardArea,
+    .cardOportunidade {
+        width: 100%;
+        max-width: none;
+    }
+
+    .cardArea.destaque.expandido {
+        min-height: 23rem;
+    }
+
+    .sub-areas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-container {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .page-header {
+        gap: 1.25rem;
+    }
+
+    .search-box,
+    .filters-row {
+        width: 100%;
+    }
+
+    .filters-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .opp-info {
+        min-width: 0;
+    }
+
+    .opp-details h3 {
+        overflow-wrap: anywhere;
+    }
+
+    .modal-content,
+    .modal-conteudo {
+        padding: 1.25rem;
+    }
+}
+
+@media (min-width: 48.0625rem) and (max-width: 64rem) {
+
+    .cards,
+    .cardsAreas,
+    .cardsOportunidades {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card,
+    .cardArea,
+    .cardOportunidade {
+        width: 100%;
     }
 }

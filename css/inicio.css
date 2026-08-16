@@ -20,7 +20,7 @@ body {
 nav {
     background-color: black;
     user-select: none;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
 }
 
 nav ul {
@@ -29,7 +29,7 @@ nav ul {
     justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 li {
@@ -45,14 +45,14 @@ li a {
 }
 
 .logo {
-    height: 50px;
+    height: 3.125rem;
 }
 
 
 .imgAcessibilidade {
-    margin-right: 5px;
-    height: 20px;
-    width: 20px;
+    margin-right: 0.3125rem;
+    height: 1.25rem;
+    width: 1.25rem;
 }
 
 /* Hover dos links */
@@ -65,8 +65,8 @@ nav ul li a:hover {
 
 nav ul li a.ativo {
     color: #CD97EB;
-    /* border-bottom: 2px solid #CD97EB; */
-    padding-bottom: 2px;
+    /* border-bottom: 0.125rem solid #CD97EB; */
+    padding-bottom: 0.125rem;
     pointer-events: none;
     cursor: default;
 }
@@ -81,12 +81,12 @@ nav ul li a.ativo:hover {
 .hero {
 
     width: 100%;
-    height: 700px;
+    height: 43.75rem;
 
     display: flex;
     align-items: center;
 
-    padding-left: 70px;
+    padding-left: 4.375rem;
 
     background-image:
         linear-gradient(90deg,
@@ -103,18 +103,18 @@ nav ul li a.ativo:hover {
 
 .hero-texto {
 
-    width: 500px;
+    width: 31.25rem;
 
 }
 
 .hero-texto h1 {
     background: transparent;
     color: white;
-    font-size: 70px;
+    font-size: 4.375rem;
     font-weight: 800;
-    margin-bottom: 35px;
+    margin-bottom: 2.1875rem;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(1.25rem);
     animation: fadeUp 0.8s ease-out forwards;
     line-height: .92;
 
@@ -133,12 +133,12 @@ nav ul li a.ativo:hover {
 .hero-texto p {
 
     color: #d6d6d6;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.8;
-    margin-bottom: 45px;
-    width: 430px;
+    margin-bottom: 2.8125rem;
+    width: 26.875rem;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(1.25rem);
     animation: fadeUp 0.8s ease-out 0.3s forwards;
 
 }
@@ -156,11 +156,11 @@ nav ul li a.ativo:hover {
 
     align-items: center;
 
-    gap: 15px;
+    gap: 0.9375rem;
 
-    padding: 18px 30px;
+    padding: 1.125rem 1.875rem;
 
-    border-radius: 10px;
+    border-radius: 0.625rem;
 
     background: #8F3EF7;
 
@@ -168,7 +168,7 @@ nav ul li a.ativo:hover {
 
     text-decoration: none;
 
-    font-size: 18px;
+    font-size: 1.125rem;
 
     font-weight: 600;
 
@@ -188,7 +188,7 @@ nav ul li a.ativo:hover {
 
     color: white;
 
-    font-size: 28px;
+    font-size: 1.75rem;
 
 }
 
@@ -198,18 +198,18 @@ nav ul li a.ativo:hover {
 
 .comoFunciona {
     width: 100%;
-    max-width: 1200px;
-    margin: 80px auto;
-    padding: 0 20px;
+    max-width: 75rem;
+    margin: 5rem auto;
+    padding: 0 1.25rem;
     background-color: #fff;
 }
 
 .comoFunciona h2 {
     text-align: center;
-    font-size: 34px;
+    font-size: 2.125rem;
     font-weight: 700;
     color: #111;
-    margin-bottom: 45px;
+    margin-bottom: 2.8125rem;
 }
 
 /* Cards */
@@ -217,7 +217,7 @@ nav ul li a.ativo:hover {
 .cards {
     display: flex;
     justify-content: center;
-    gap: 36px;
+    gap: 2.25rem;
     flex-wrap: wrap;
 }
 
@@ -226,14 +226,14 @@ nav ul li a.ativo:hover {
 .card {
     position: relative;
 
-    width: 320px;
-    min-height: 150px;
+    width: 20rem;
+    min-height: 9.375rem;
 
     background: #e9e0ef;
 
-    border-radius: 14px;
+    border-radius: 0.875rem;
 
-    padding: 28px 24px 24px;
+    padding: 1.75rem 1.5rem 1.5rem;
 
     box-sizing: border-box;
 
@@ -248,15 +248,15 @@ nav ul li a.ativo:hover {
 
 .card .icone {
     position: absolute;
-    top: 16px;
-    left: 16px;
+    top: 1rem;
+    left: 1rem;
 
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
 
     border-radius: 50%;
 
-    border: 2px solid #7b3fb8;
+    border: 0.125rem solid #7b3fb8;
 
     color: #7b3fb8;
 
@@ -264,7 +264,7 @@ nav ul li a.ativo:hover {
     justify-content: center;
     align-items: center;
 
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 /* Número */
@@ -273,11 +273,11 @@ nav ul li a.ativo:hover {
 
     position: absolute;
 
-    right: 12px;
-    top: 12px;
+    right: 0.75rem;
+    top: 0.75rem;
 
-    width: 22px;
-    height: 22px;
+    width: 1.375rem;
+    height: 1.375rem;
 
     border-radius: 50%;
 
@@ -289,7 +289,7 @@ nav ul li a.ativo:hover {
     justify-content: center;
     align-items: center;
 
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: bold;
 }
 
@@ -297,10 +297,10 @@ nav ul li a.ativo:hover {
 
 .card h3 {
 
-    margin-top: 26px;
-    margin-bottom: 12px;
+    margin-top: 1.625rem;
+    margin-bottom: 0.75rem;
 
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
 
     color: #111;
@@ -310,7 +310,7 @@ nav ul li a.ativo:hover {
 
 .card p {
 
-    font-size: 16px;
+    font-size: 1rem;
 
     color: #333;
 
@@ -321,19 +321,19 @@ nav ul li a.ativo:hover {
 
 /* Responsivo */
 
-@media(max-width:1000px) {
+@media(max-width:62.5rem) {
 
     .cards {
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .card {
-        width: 300px;
+        width: 18.75rem;
     }
 
 }
 
-@media(max-width:768px) {
+@media(max-width:48rem) {
 
     .cards {
         flex-direction: column;
@@ -342,7 +342,7 @@ nav ul li a.ativo:hover {
 
     .card {
         width: 100%;
-        max-width: 420px;
+        max-width: 26.25rem;
     }
 
 }
@@ -352,35 +352,35 @@ nav ul li a.ativo:hover {
 /*Configuração da section areas*/
 .areas {
     width: 100%;
-    max-width: 1200px;
-    margin: 80px auto;
-    padding: 0 20px;
+    max-width: 75rem;
+    margin: 5rem auto;
+    padding: 0 1.25rem;
 }
 
 .areas h2 {
     text-align: center;
-    font-size: 34px;
+    font-size: 2.125rem;
     font-weight: 700;
     color: #111;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 .cardsAreas {
     display: flex;
     justify-content: center;
-    gap: 18px;
+    gap: 1.125rem;
     flex-wrap: wrap;
 }
 
 /* Card */
 
 .cardArea {
-    width: 260px;
-    min-height: 190px;
-    padding: 22px;
+    width: 16.25rem;
+    min-height: 11.875rem;
+    padding: 1.375rem;
 
     background: #d9d9d9;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 
     box-sizing: border-box;
     cursor: pointer;
@@ -395,8 +395,8 @@ nav ul li a.ativo:hover {
 /* Ícone */
 
 .cardArea .icone {
-    width: 38px;
-    height: 38px;
+    width: 2.375rem;
+    height: 2.375rem;
 
     display: flex;
     align-items: center;
@@ -406,9 +406,9 @@ nav ul li a.ativo:hover {
     background: #b8c9bf;
 
     color: #184d3b;
-    font-size: 18px;
+    font-size: 1.125rem;
 
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 
     transition: .35s;
 }
@@ -416,11 +416,11 @@ nav ul li a.ativo:hover {
 /* Título */
 
 .cardArea h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #111;
 
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 
     transition: .35s;
 }
@@ -428,11 +428,11 @@ nav ul li a.ativo:hover {
 /* Texto */
 
 .cardArea p {
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.6;
     color: #333;
 
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 
     transition: .35s;
 }
@@ -443,14 +443,14 @@ nav ul li a.ativo:hover {
     width: fit-content;
 
     border: none;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 
-    padding: 8px 18px;
+    padding: 0.5rem 1.125rem;
 
     background: #b8c9bf;
     color: #184d3b;
 
-    font-size: 13px;
+    font-size: 0.8125rem;
 
     cursor: pointer;
 
@@ -460,11 +460,11 @@ nav ul li a.ativo:hover {
 .btn-inativo {
     width: fit-content;
     border: none;
-    border-radius: 20px;
-    padding: 8px 18px;
+    border-radius: 1.25rem;
+    padding: 0.5rem 1.125rem;
     background: #b8c9bf;
     color: #184d3b;
-    font-size: 13px;
+    font-size: 0.8125rem;
     cursor: not-allowed !important;
     transition: .35s;
     opacity: 0.6;
@@ -481,7 +481,7 @@ nav ul li a.ativo:hover {
 
     transform: translateY(-6px);
 
-    box-shadow: 0 12px 25px rgba(0, 0, 0, .18);
+    box-shadow: 0 0.75rem 1.5625rem rgba(0, 0, 0, .18);
 }
 
 .cardArea:hover h3 {
@@ -506,7 +506,7 @@ nav ul li a.ativo:hover {
       RESPONSIVO
 =========================*/
 
-@media (max-width: 1100px) {
+@media (max-width: 68.75rem) {
 
     .cardsAreas {
         justify-content: center;
@@ -514,7 +514,7 @@ nav ul li a.ativo:hover {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
 
     .cardsAreas {
         flex-direction: column;
@@ -523,7 +523,7 @@ nav ul li a.ativo:hover {
 
     .cardArea {
         width: 100%;
-        max-width: 380px;
+        max-width: 23.75rem;
     }
 
 }
@@ -534,7 +534,7 @@ nav ul li a.ativo:hover {
 .cardsAreas {
     display: flex;
     justify-content: center;
-    gap: 18px;
+    gap: 1.125rem;
     flex-wrap: wrap;
     align-items: flex-start;
     /* Garante que os outros cards não estiquem verticalmente */
@@ -550,7 +550,7 @@ nav ul li a.ativo:hover {
 
 /* Estado Expandido */
 .cardArea.destaque.expandido {
-    width: 550px;
+    width: 34.375rem;
     /* Expande para a direita */
     background: #184d3b;
     cursor: default;
@@ -574,14 +574,14 @@ nav ul li a.ativo:hover {
     right: 0;
     width: 100%;
     height: 100%;
-    padding: 22px;
+    padding: 1.375rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     opacity: 0;
     pointer-events: none;
-    transform: translateX(30px);
+    transform: translateX(1.875rem);
     transition: all 0.5s ease;
 }
 
@@ -593,36 +593,36 @@ nav ul li a.ativo:hover {
 
 .sub-areas-content h4 {
     color: #fff;
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 1.125rem;
+    margin-bottom: 1.25rem;
     font-weight: 700;
 }
 
 .sub-areas-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-bottom: 25px;
+    gap: 0.75rem;
+    margin-bottom: 1.5625rem;
 }
 
 .sub-area-item {
-    padding: 12px;
+    padding: 0.75rem;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
+    border-radius: 0.5rem;
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
     transition: 0.3s;
 }
 
 .sub-area-item.ativo {
     background: #fff;
     color: #184d3b;
-    border: 1px solid #fff;
+    border: 0.0625rem solid #fff;
 }
 
 .sub-area-item.ativo:hover {
@@ -638,14 +638,14 @@ nav ul li a.ativo:hover {
 }
 
 .sub-area-item small {
-    font-size: 10px;
+    font-size: 0.625rem;
     font-weight: 400;
     display: block;
 }
 
 .dot {
-    width: 8px;
-    height: 8px;
+    width: 0.5rem;
+    height: 0.5rem;
     border-radius: 50%;
     background: #4fd699;
 }
@@ -656,11 +656,11 @@ nav ul li a.ativo:hover {
 
 .btn-voltar {
     background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 0.0625rem solid rgba(255, 255, 255, 0.3);
     color: #fff;
-    padding: 6px 15px;
-    border-radius: 20px;
-    font-size: 12px;
+    padding: 0.375rem 0.9375rem;
+    border-radius: 1.25rem;
+    font-size: 0.75rem;
     cursor: pointer;
     width: fit-content;
     transition: 0.3s;
@@ -671,11 +671,11 @@ nav ul li a.ativo:hover {
 }
 
 /* Responsividade para o card expandido */
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .cardArea.destaque.expandido {
         width: 100%;
-        max-width: 380px;
-        min-height: 350px;
+        max-width: 23.75rem;
+        min-height: 21.875rem;
     }
 
     .sub-areas-grid {
@@ -689,22 +689,22 @@ nav ul li a.ativo:hover {
 
 .oportunidades {
     width: 100%;
-    max-width: 1200px;
-    margin: 80px auto;
-    padding: 0 20px;
+    max-width: 75rem;
+    margin: 5rem auto;
+    padding: 0 1.25rem;
 }
 
 .oportunidades h2 {
     text-align: center;
-    font-size: 34px;
+    font-size: 2.125rem;
     font-weight: 700;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 .cardsOportunidades {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 1.25rem;
     flex-wrap: wrap;
 }
 
@@ -712,13 +712,13 @@ nav ul li a.ativo:hover {
 
 .cardOportunidade {
 
-    width: 330px;
-    min-height: 210px;
+    width: 20.625rem;
+    min-height: 13.125rem;
 
-    padding: 18px;
+    padding: 1.125rem;
 
-    border: 1px solid #d9d9d9;
-    border-radius: 10px;
+    border: 0.0625rem solid #d9d9d9;
+    border-radius: 0.625rem;
 
     background: #fff;
 
@@ -733,7 +733,7 @@ nav ul li a.ativo:hover {
 
     border-color: #7d2bc9;
 
-    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+    box-shadow: 0 0.625rem 1.5625rem rgba(0, 0, 0, .08);
 }
 
 /* Tag superior */
@@ -742,28 +742,28 @@ nav ul li a.ativo:hover {
 
     display: inline-block;
 
-    padding: 5px 10px;
+    padding: 0.3125rem 0.625rem;
 
-    border-radius: 20px;
+    border-radius: 1.25rem;
 
     background: #e7d8f6;
 
     color: #7d2bc9;
 
-    font-size: 12px;
+    font-size: 0.75rem;
 
     font-weight: 600;
 
-    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
 }
 
 /* Título */
 
 .cardOportunidade h3 {
 
-    font-size: 24px;
+    font-size: 1.5rem;
 
-    margin-bottom: 6px;
+    margin-bottom: 0.375rem;
 
     color: #111;
 }
@@ -772,11 +772,11 @@ nav ul li a.ativo:hover {
 
 .empresa {
 
-    font-size: 14px;
+    font-size: 0.875rem;
 
     color: #555;
 
-    margin-bottom: 14px;
+    margin-bottom: 0.875rem;
 
     text-transform: uppercase;
 }
@@ -785,11 +785,11 @@ nav ul li a.ativo:hover {
 
 .local {
 
-    font-size: 14px;
+    font-size: 0.875rem;
 
     color: #333;
 
-    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
 }
 
 /* Tecnologias */
@@ -798,11 +798,11 @@ nav ul li a.ativo:hover {
 
     display: flex;
 
-    gap: 8px;
+    gap: 0.5rem;
 
     flex-wrap: wrap;
 
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .tags span {
@@ -811,11 +811,11 @@ nav ul li a.ativo:hover {
 
     color: #666;
 
-    padding: 5px 10px;
+    padding: 0.3125rem 0.625rem;
 
-    border-radius: 20px;
+    border-radius: 1.25rem;
 
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 /* Link */
@@ -842,19 +842,19 @@ nav ul li a.ativo:hover {
 
     display: block;
 
-    margin: 40px auto 0;
+    margin: 2.5rem auto 0;
 
-    padding: 12px 28px;
+    padding: 0.75rem 1.75rem;
 
-    border: 2px solid #7d2bc9;
+    border: 0.125rem solid #7d2bc9;
 
-    border-radius: 8px;
+    border-radius: 0.5rem;
 
     background: transparent;
 
     color: #7d2bc9;
 
-    font-size: 15px;
+    font-size: 0.9375rem;
 
     font-weight: 600;
 
@@ -874,7 +874,7 @@ nav ul li a.ativo:hover {
       RESPONSIVO
 =========================*/
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
 
     .cardsOportunidades {
 
@@ -886,7 +886,7 @@ nav ul li a.ativo:hover {
     .cardOportunidade {
 
         width: 100%;
-        max-width: 400px;
+        max-width: 25rem;
     }
 
 }
@@ -896,17 +896,17 @@ nav ul li a.ativo:hover {
 /*Configuração da section Sobre*/
 .sobre {
 
-    max-width: 1200px;
-    margin: 80px auto;
-    padding: 40px;
+    max-width: 75rem;
+    margin: 5rem auto;
+    padding: 2.5rem;
 
     background: #06251f;
 
-    border-radius: 12px;
+    border-radius: 0.75rem;
 
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 /* Imagem */
@@ -919,12 +919,12 @@ nav ul li a.ativo:hover {
 .sobreImagem img {
 
     width: 100%;
-    max-width: 430px;
-    height: 280px;
+    max-width: 26.875rem;
+    height: 17.5rem;
 
     object-fit: cover;
 
-    border-radius: 10px;
+    border-radius: 0.625rem;
 
     display: block;
 }
@@ -940,22 +940,22 @@ nav ul li a.ativo:hover {
 
 .sobreTexto h2 {
 
-    font-size: 38px;
+    font-size: 2.375rem;
 
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 
     font-weight: 700;
 }
 
 .sobreTexto p {
 
-    font-size: 18px;
+    font-size: 1.125rem;
 
     line-height: 1.9;
 
     color: #d9d9d9;
 
-    margin-bottom: 35px;
+    margin-bottom: 2.1875rem;
 }
 
 /* Ícones */
@@ -964,7 +964,7 @@ nav ul li a.ativo:hover {
 
     display: flex;
 
-    gap: 18px;
+    gap: 1.125rem;
 
     flex-wrap: wrap;
 }
@@ -975,13 +975,13 @@ nav ul li a.ativo:hover {
 
     align-items: center;
 
-    gap: 12px;
+    gap: 0.75rem;
 }
 
 .info i {
 
-    width: 42px;
-    height: 42px;
+    width: 2.625rem;
+    height: 2.625rem;
 
     display: flex;
     justify-content: center;
@@ -991,16 +991,16 @@ nav ul li a.ativo:hover {
 
     color: #06251f;
 
-    border-radius: 8px;
+    border-radius: 0.5rem;
 
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .info span {
 
     color: #fff;
 
-    font-size: 15px;
+    font-size: 0.9375rem;
 
     font-weight: 600;
 
@@ -1011,7 +1011,7 @@ nav ul li a.ativo:hover {
       RESPONSIVO
 =========================*/
 
-@media(max-width:900px) {
+@media(max-width:56.25rem) {
 
     .sobre {
 
@@ -1033,21 +1033,21 @@ nav ul li a.ativo:hover {
 
 }
 
-@media(max-width:600px) {
+@media(max-width:37.5rem) {
 
     .sobre {
 
-        padding: 25px;
+        padding: 1.5625rem;
     }
 
     .sobreTexto h2 {
 
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     .sobreTexto p {
 
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .sobreInfo {
@@ -1068,22 +1068,22 @@ nav ul li a.ativo:hover {
 
     color: #fff;
 
-    margin-top: 80px;
+    margin-top: 5rem;
 
-    padding: 40px 0;
+    padding: 2.5rem 0;
 
-    border-top: 1px solid rgba(255, 255, 255, .08);
+    border-top: 0.0625rem solid rgba(255, 255, 255, .08);
 }
 
 /* Container */
 
 .footerContainer {
 
-    max-width: 1200px;
+    max-width: 75rem;
 
     margin: 0 auto;
 
-    padding: 0 40px;
+    padding: 0 2.5rem;
 
     display: flex;
 
@@ -1091,39 +1091,39 @@ nav ul li a.ativo:hover {
 
     align-items: flex-start;
 
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 /* Logo */
 
 .footerLogo {
 
-    width: 260px;
+    width: 16.25rem;
 }
 
 .logo {
 
-    width: 70px;
+    width: 4.375rem;
 
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .footerLogo p {
 
-    font-size: 14px;
+    font-size: 0.875rem;
 
     color: #d4d4d4;
 
     line-height: 1.6;
 
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 }
 
 .footerLinks {
 
     display: flex;
 
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .footerLinks a {
@@ -1132,7 +1132,7 @@ nav ul li a.ativo:hover {
 
     text-decoration: none;
 
-    font-size: 13px;
+    font-size: 0.8125rem;
 }
 
 .footerLinks a:hover {
@@ -1144,9 +1144,9 @@ nav ul li a.ativo:hover {
 
 .footerCol h3 {
 
-    font-size: 16px;
+    font-size: 1rem;
 
-    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
 }
 
 .footerCol ul {
@@ -1156,7 +1156,7 @@ nav ul li a.ativo:hover {
 
 .footerCol ul li {
 
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 }
 
 .footerCol a {
@@ -1165,7 +1165,7 @@ nav ul li a.ativo:hover {
 
     text-decoration: none;
 
-    font-size: 14px;
+    font-size: 0.875rem;
 
     transition: .3s;
 }
@@ -1179,9 +1179,9 @@ nav ul li a.ativo:hover {
 
     color: #d6d6d6;
 
-    font-size: 14px;
+    font-size: 0.875rem;
 
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 /* Redes sociais */
@@ -1190,12 +1190,12 @@ nav ul li a.ativo:hover {
 
     display: flex;
 
-    gap: 18px;
+    gap: 1.125rem;
 }
 
 .redes i {
 
-    font-size: 22px;
+    font-size: 1.375rem;
 
     cursor: pointer;
 
@@ -1217,9 +1217,9 @@ nav ul li a.ativo:hover {
 
     border: none;
 
-    border-radius: 6px;
+    border-radius: 0.375rem;
 
-    padding: 8px 18px;
+    padding: 0.5rem 1.125rem;
 
     cursor: pointer;
 
@@ -1241,18 +1241,18 @@ nav ul li a.ativo:hover {
 
     text-align: center;
 
-    padding: 18px;
+    padding: 1.125rem;
 
-    font-size: 13px;
+    font-size: 0.8125rem;
 
-    border-top: 1px solid rgba(255, 255, 255, .08);
+    border-top: 0.0625rem solid rgba(255, 255, 255, .08);
 }
 
 /*=========================
       RESPONSIVO
 =========================*/
 
-@media(max-width:900px) {
+@media(max-width:56.25rem) {
 
     .footer {
 
@@ -1276,7 +1276,7 @@ nav ul li a.ativo:hover {
 
 }
 
-@media(max-width:600px) {
+@media(max-width:37.5rem) {
 
     .footer {
 
@@ -1292,11 +1292,11 @@ nav ul li a.ativo:hover {
 /* RESPONSIVIDADE*/
 /* Para abrir em tablets */
 
-@media (max-width: 900px) {
+@media (max-width: 56.25rem) {
 
     nav ul {
         justify-content: center;
-        gap: 30px;
+        gap: 1.875rem;
     }
 
 }
@@ -1304,20 +1304,146 @@ nav ul li a.ativo:hover {
 /* Para abrir em celulares */
 
 
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
 
     nav {
-        padding: 15px;
+        padding: 0.9375rem;
     }
 
     nav ul {
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        gap: 0.9375rem;
     }
 
     .logo {
-        height: 45px;
+        height: 2.8125rem;
     }
 
+}
+
+/* Camada responsiva da página — base mobile-first aplicada por global.css */
+@media (max-width: 48rem) {
+    .hero {
+        min-height: 34rem;
+        height: auto;
+        padding: 4rem 1.25rem;
+    }
+
+    .hero-texto {
+        width: min(100%, 32rem);
+    }
+
+    .hero-texto h1 {
+        font-size: clamp(2.5rem, 10vw, 4.375rem);
+    }
+
+    .hero-texto p {
+        width: auto;
+        max-width: 32rem;
+        font-size: 1rem;
+    }
+
+    .comoFunciona,
+    .areas,
+    .oportunidades {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+    }
+
+    .comoFunciona h2,
+    .areas h2,
+    .oportunidades h2 {
+        font-size: clamp(1.75rem, 7vw, 2.125rem);
+    }
+
+    .cards,
+    .cardsAreas,
+    .cardsOportunidades {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1rem;
+    }
+
+    .card,
+    .cardArea,
+    .cardOportunidade {
+        width: 100%;
+        max-width: none;
+    }
+
+    .cardArea.destaque.expandido {
+        min-height: 23rem;
+    }
+
+    .sub-areas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-container {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .page-header {
+        gap: 1.25rem;
+    }
+
+    .search-box,
+    .filters-row {
+        width: 100%;
+    }
+
+    .filters-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .opp-info {
+        min-width: 0;
+    }
+
+    .opp-details h3 {
+        overflow-wrap: anywhere;
+    }
+
+    .modal-content,
+    .modal-conteudo {
+        padding: 1.25rem;
+    }
+}
+
+@media (min-width: 48.0625rem) and (max-width: 64rem) {
+
+    .cards,
+    .cardsAreas,
+    .cardsOportunidades {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card,
+    .cardArea,
+    .cardOportunidade {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+/* Regra de maior especificidade: somente o destaque da hero inicial pode quebrar no mobile */
+@media (max-width: 48rem) {
+    html body .hero .hero-texto h1 .destaque {
+        display: inline !important;
+        max-width: 100% !important;
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+        word-break: normal !important;
+    }
 }

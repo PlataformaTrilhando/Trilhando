@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 2. Configuração dos botões de detalhes
     document.querySelectorAll('.btn-detalhes').forEach(botao => {
-        botao.addEventListener('click', function() {
+        botao.addEventListener('click', function () {
             const key = this.getAttribute('data-key');
             abrirModal(key);
         });
